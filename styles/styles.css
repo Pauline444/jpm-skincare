@@ -7,26 +7,11 @@
 header {
   background-color: #e4d4c3;
 }
-
-.header-top {
+header .header-top {
   display: flex;
   justify-content: space-between;
 }
-
-.header-bottom {
-  padding: 10px 0;
-  text-align: center;
-}
-.header-bottom nav ul li {
-  display: inline;
-}
-.header-bottom nav ul li a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-}
-
-.logo-container {
+header .header-top .logo-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -34,31 +19,63 @@ header {
   max-width: 200px;
   padding: 10px;
 }
-.logo-container .logo-img {
+header .header-top .logo-container .logo-img {
   max-width: 70px;
   border-radius: 50%;
 }
-.logo-container .logo-text {
+header .header-top .logo-container .logo-text {
   margin: 25px auto auto 5px;
 }
-
-.hero {
+header .header-top .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 5px;
+}
+header .header-top .search-bar .search {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+header .header-bottom {
+  padding: 10px 0;
+  text-align: center;
+}
+header .header-bottom nav ul li {
+  display: inline;
+}
+header .header-bottom .nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  cursor: pointer;
+}
+header .header-bottom .nav-link:hover {
+  background-color: #f4ede5;
+  padding: 10px auto;
+}
+header .header-bottom .active {
+  background-color: #f4ede5;
+  padding-bottom: 15px;
+}
+header .hero {
   position: relative;
   text-align: center;
   color: white;
 }
-.hero-img {
+header .hero-img {
   max-width: 100%;
   height: auto;
   display: block;
   opacity: 0.7;
 }
-.hero-text {
+header .hero-text {
   position: absolute;
   top: 20%;
   width: 70%;
 }
-.hero-btn {
+header .hero-btn {
   position: absolute;
   top: 45%;
   right: 5%;
