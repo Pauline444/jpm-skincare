@@ -48,16 +48,14 @@ header .header-bottom nav ul li {
 header .header-bottom .nav-link {
   text-decoration: none;
   color: black;
-  padding: 5px;
+  padding: 11px 5px;
   cursor: pointer;
 }
 header .header-bottom .nav-link:hover {
   background-color: #f4ede5;
-  padding: 10px auto;
 }
 header .header-bottom .active {
   background-color: #f4ede5;
-  padding-bottom: 15px;
 }
 header .hero {
   position: relative;
