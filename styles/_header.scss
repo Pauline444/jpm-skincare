@@ -4,23 +4,30 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-}
-
 header {
     background-color: #e4d4c3;
 }
 
-nav ul li {
-    display: inline;
+.header-top {
+    display: flex;
+    justify-content: space-between;
 }
 
-img.logo {
-    max-width: 70px;
-    border-radius: 50%;
+.header-bottom {
+    padding: 10px 0;
+    text-align: center;
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
 }
+
 
 .logo-container {
     display: flex;
@@ -29,41 +36,43 @@ img.logo {
     align-items: center;
     max-width: 200px;
     padding: 10px;
-}
 
-.logo-text {
-    margin: 25px auto auto 5px;
+    .logo-img {
+        max-width: 70px;
+        border-radius: 50%;
+    }
+
+    .logo-text {
+        margin: 25px auto auto 5px;
+    }
 }
 
 .hero {
     position: relative;
     text-align: center;
     color: white;
-}
 
-.hero-img {
-    max-width: 411px;
-}
+    &-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        opacity: 0.7;
+    }
 
-.hero-text {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    width: 60%;
-    text-align: center;
-}
+    &-text {
+        position: absolute;
+        top: 20%;
+        width: 70%;
+    }
 
-.hero-btn {
-    position: absolute;
-    top: 45%;
-    right: 5%;
-    padding: 10px 20px;
-    background-color: #4d5a49;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-img {
-    max-width: 200px;
+    &-btn {
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        padding: 10px 20px;
+        background-color: #4d5a49;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 }
