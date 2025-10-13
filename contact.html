@@ -78,6 +78,32 @@
         <p>+46 8 123 456 78</p>
       </div>
     </section>
+
+    <section id="contact-form" aria-label="Kontaktformulär">
+      <img src="/images/img-entrance-web.jpg" alt="Byggnad">
+      <aside>
+        <h3>Skicka ett meddelande</h3>
+        <form action="/action_page.php" method="get">
+          <label for="name">Namn</label><br>
+          <input type="text" id="name" name="name" placeholder="Ange namn"><br>
+          <label for="email">Epost</label><br>
+          <input type="email" id="email" name="email" placeholder="Ange epost"><br>
+          <label for="subject">Välj ämne</label><br>
+          <select name="subject" id="subject">
+            <option value="facial-treatments">Ansiktsbehandlingar</option>
+            <option value="lashes-brows">Fransar och bryn</option>
+            <option value="chemical-peel">Kemisk peeling</option>
+            <option value="massage">Massage</option>
+            <option value="questions">Frågor om företaget</option>
+            <option value="feedback">Synpunkter på webbplats</option>
+          </select><br>
+          <label for="message">Meddelande</label><br>
+          <textarea id="message" name="message" placeholder="Skriv ett meddelande"></textarea><br>
+          <button type="button-send">Boka</button>
+        </form>
+      </aside>
+    </section>
+
   </main>
   <footer>
     <div class="footer-content">
