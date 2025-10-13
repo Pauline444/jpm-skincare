@@ -82,4 +82,11 @@ header .hero-btn {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.first-treat-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */
