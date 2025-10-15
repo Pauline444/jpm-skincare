@@ -1,127 +1,158 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta author="Pauline Pettersson, Jenna Kangas, Marcus Friberg" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
-      crossorigin="anonymous" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta author="Pauline Pettersson, Jenna Kangas, Marcus Friberg" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+    crossorigin="anonymous" />
 
   <title>About JPM Skincare</title>
 </head>
 
 <body>
   <header>
-    <div class="header-top">
-      <div class="logo-container">
-        <img class="logo-img" src="images/img-logo.png" alt="JPM Skincare logo" />
-        <p class="logo-text">JPM Hudvård</p>
+    <section class="header-container">
+      <div class="header-top">
+        <div class="logo-container">
+          <img class="logo-img" src="images/img-logo.png" alt="JPM Skincare logo" />
+          <p class="logo-text">JPM Hudvård</p>
+        </div>
       </div>
-      <div class="search-bar">
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <input class="search" type="search" placeholder="Sök..." aria-label="Sök" />
+      <div class="header-bottom menu-container">
+        <nav class="nav-menu-container">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a class="nav-link active" href="about.html">About us</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="reference.html">Reference</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger-menu-container">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars hamburger" alt="hamburger menu"></i>
+            <i class="fa-solid fa-xmark close" alt="x close menu"></i>
+          </label>
+
+          <aside class="sidebar">
+            <ul class="sidebar-links">
+              <li><a href="index.html" class="sidebar-link">Home</a></li>
+              <li><a class="sidebar-link" href="about.html">About us</a></li>
+              <li><a class="sidebar-link" href="services.html">Services</a></li>
+              <li><a class="sidebar-link" href="reference.html">Reference</a></li>
+              <li><a class="sidebar-link" href="contact.html">Contact</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="header-btn-container">
+          <a href="services.html" class="btn header-btn">Boka tid</a>
+        </div>
       </div>
-    </div>
-    <div class="header-bottom">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a class="nav-link active" href="about.html">About us</a></li>
-          <li><a class="nav-link" href="services.html">Services</a></li>
-          <li><a class="nav-link" href="reference.html">Reference</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- <div class="hamburger-menu">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div> -->
-    </div>
+    </section>
   </header>
   <main>
     <section class="about-section">
       <div class="about-text">
         <h1>Om JPM hudvård</h1>
         <p>
-          Välkommen till JPM Hudvård - din plats för skönhet, balans och avkoppling mitt i hjärtat av Stockholm. 
-          Hos oss handlar hudvård om mer än bara behandlingar - det handlar om att ta hand om sig själv, hitta lugnet och 
-          känna sig bekväm i sin egen hud. Vi är ett team av engagerade terapeuter som erbjuder individuellt anpassade 
-          behandlingar inom hudvård, kemisk peeling, massage, fransar & bryn samt pedikyr. Med produkter från Dermalogica, 
-          Medik8 och Murad ser vi till att din hud får den omtanke och näring den förtjänar. Vår miljö är lugn, personlig 
+          Välkommen till JPM Hudvård - din plats för skönhet, balans och avkoppling mitt i hjärtat av Stockholm.
+          Hos oss handlar hudvård om mer än bara behandlingar - det handlar om att ta hand om sig själv, hitta lugnet
+          och
+          känna sig bekväm i sin egen hud. Vi är ett team av engagerade terapeuter som erbjuder individuellt anpassade
+          behandlingar inom hudvård, kemisk peeling, massage, fransar & bryn samt pedikyr. Med produkter från
+          Dermalogica,
+          Medik8 och Murad ser vi till att din hud får den omtanke och näring den förtjänar. Vår miljö är lugn,
+          personlig
           och inbjudande - en plats där du kan slappna av, hämta ny energi och lämna vardagen för en stund.
         </p>
       </div>
       <div class="about-image">
         <img src="/images/about-us-extra.jpg" alt="Bild om oss">
       </div>
-    </section>
-    <section class="staff-section">
+      </section>
+      <section class="staff-section">
       <div class="staff-container">
-        <articel class="staff-card">
+        <h2>Vi på JPM Hudvård</h2>
+        <article class="staff-card">
           <img src="/images/Carolina.jpg" alt="Carolina, Hudterapeut">
-          <h2>Carolina</h2>
+          <h3>Carolina</h3>
           <p class="role">Grundare & Auktoriserad Hud- & Spaterapeut</p>
           <p class="bio">
-            Carolina är företagets grundare och auktoriserad hud- & spaterapeut med vidareutbildning inom avancerad 
-            hudvård, kemisk peeling och fransdesign. Hon erbjuder resultatinriktade behandlingar inom hudvård, kemisk 
+            Carolina är företagets grundare och auktoriserad hud- & spaterapeut med vidareutbildning inom avancerad
+            hudvård, kemisk peeling och fransdesign. Hon erbjuder resultatinriktade behandlingar inom hudvård, kemisk
             peeling, massage samt fransar & bryn – alltid med fokus på kvalitet, trygghet och kundens välmående.
           </p>
+        </article>
+          <article class="staff-card">
         </articel>
-          <articel class="staff-card">
+        <articel class="staff-card">
           <img src="/images/Anna.jpg" alt="Anna, Hudterapeut">
-          <h2>Anna</h2>
+          <h3>Anna</h3>
           <p class="role">Specialist på Ansiktsbehandlingar</p>
           <p class="bio">
-            Anna har en bakgrund som hudterapeut i både Sverige och utomlands och är känd för sina skräddarsydda 
-            ansiktsbehandlingar som kombinerar klassiska tekniker med modern hudvård. Hon fokuserar främst på hudvård, 
+            Anna har en bakgrund som hudterapeut i både Sverige och utomlands och är känd för sina skräddarsydda
+            ansiktsbehandlingar som kombinerar klassiska tekniker med modern hudvård. Hon fokuserar främst på hudvård,
             kemisk peeling och ansiktsmassage för att stärka huden och skapa total avslappning.
           </p>
+        </article>
+          <article class="staff-card">
         </articel>
-          <articel class="staff-card">
+        <articel class="staff-card">
           <img src="/images/Anastasia.jpg" alt="Anastasia, Hudterapeut">
-          <h2>Anastasia</h2>
+          <h3>Anastasia</h3>
           <p class="role">Expert på Djuprengörande Hudvård & Lymfdränage</p>
           <p class="bio">
             Anastasia har utvecklat en unik, skonsam metod för djuprengörande hudvård och lymfdränage, där hon arbetar
-            med precision och tålamod. Hennes behandlingar fokuserar på hudvård, kemisk peeling och massage - alltid 
+            med precision och tålamod. Hennes behandlingar fokuserar på hudvård, kemisk peeling och massage - alltid
             med ett lugnt och tryggt bemötande.
           </p>
+        </article>
+          <article class="staff-card">
         </articel>
-          <articel class="staff-card">
+        <articel class="staff-card">
           <img src="/images/Felicia.jpg" alt="Felicia, Hudterapeut">
-          <h2>Felicia</h2>
+          <h3>Felicia</h3>
           <p class="role">Hudterapeut med fokus på Kemisk Peeling</p>
           <p class="bio">
-            Felicia är utbildad inom avancerad hudvård och har specialiserat sig på olika typer av kemiska peelingar. 
-            Hon arbetar även med hudvård, ansiktsbehandlingar och lättare massage, alltid med målet att förbättra 
+            Felicia är utbildad inom avancerad hudvård och har specialiserat sig på olika typer av kemiska peelingar.
+            Hon arbetar även med hudvård, ansiktsbehandlingar och lättare massage, alltid med målet att förbättra
             hudens struktur och lyster på ett säkert och professionellt sätt.
           </p>
+        </article>
+          <article class="staff-card">
         </articel>
-          <articel class="staff-card">
+        <articel class="staff-card">
           <img src="/images/Patricia.jpg" alt="Patricia, Hudterapeut">
-          <h2>Patricia</h2>
+          <h3>Patricia</h3>
           <p class="role">Massageterapeut och Avslappningsspecialist</p>
           <p class="bio">
-            Patricia har många års erfarenhet av ansiktsmassage, lymfdränage och avslappnande spabehandlingar. 
-            Hon fokuserar främst på massage och helhetsbehandlingar men erbjuder även enklare hudvård för att skapa 
+            Patricia har många års erfarenhet av ansiktsmassage, lymfdränage och avslappnande spabehandlingar.
+            Hon fokuserar främst på massage och helhetsbehandlingar men erbjuder även enklare hudvård för att skapa
             balans, återhämtning och inre ro.
           </p>
+        </article>
+          <article class="staff-card">
         </articel>
-          <articel class="staff-card">
+        <articel class="staff-card">
           <img src="/images/Viktoria.jpg" alt="Viktoria, Hudterapeut">
-          <h2>Viktoria</h2>
+          <h3>Viktoria</h3>
           <p class="role">Specialist på Fransar, Bryn & Pedikyr</p>
           <p class="bio">
-            Victoria är utbildad hud- och spaterapeut med vidareutbildning inom frans- och brynbehandlingar samt pedikyr. 
-            Hon arbetar med franslyft, brynformning, färg och fotvård, där hennes känsla för precision och estetik skapar 
+            Victoria är utbildad hud- och spaterapeut med vidareutbildning inom frans- och brynbehandlingar samt
+            pedikyr.
+            Hon arbetar med franslyft, brynformning, färg och fotvård, där hennes känsla för precision och estetik
+            skapar
             naturligt vackra resultat.
           </p>
-        </articel>
+        </article>
       </div>
     </section>
   </main>

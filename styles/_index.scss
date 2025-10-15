@@ -1,0 +1,51 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.main-container {
+    max-width: 100vw;
+
+    .main-about-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-beige-light;
+
+        .main-about-us-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+            &1,
+            &2 {
+                max-width: 90%;
+
+                & h2,
+                & h3 {
+                    text-align: center;
+                    padding: 20px;
+                }
+
+                & p {
+                    padding: 5px 20px;
+                }
+
+            }
+        }
+
+        &-img img {
+            margin-top: 30px;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 10px;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            padding: 30px;
+        }
+    }
+}
