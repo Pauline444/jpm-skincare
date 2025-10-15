@@ -202,6 +202,48 @@ header .hero-flex-container .hero-btn:hover {
   margin: 1rem 0;
 }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0rem 0rem;
+}
+.about-section .about-text {
+  max-width: 600px;
+}
+.about-section .about-text h1 {
+  margin-bottom: 2rem;
+}
+.about-section .about-image img {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem;
+}
+
+.staff-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f4ede5;
+  padding: 2rem;
+}
+.staff-section .staff-card img {
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem 0rem 0rem;
+  border: 15px, solid, #f4dad0;
+}
+.staff-section .staff-card .role {
+  max-width: 300px;
+  padding: 0rem 0rem 1rem;
+}
+.staff-section .staff-card .bio {
+  max-width: 300px;
+  padding: 0rem 0rem 1rem;
 .cards-section {
   background: #f4ede5;
   box-sizing: border-box;
