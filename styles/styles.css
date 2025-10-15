@@ -22,14 +22,15 @@ header .header-top .logo-container {
   justify-content: start;
   align-items: center;
   max-width: 200px;
-  padding: 10px;
+  padding: 8px;
 }
 header .header-top .logo-container .logo-img {
-  max-width: 70px;
+  max-width: 50px;
   border-radius: 50%;
 }
 header .header-top .logo-container .logo-text {
-  margin: 25px auto auto 5px;
+  margin: 0 0 0 5px;
+  color: #9b6f54;
 }
 header .header-bottom {
   padding: 10px 0;
@@ -46,12 +47,13 @@ header .header-bottom .hamburger-menu-container #menu-toggle {
 }
 header .header-bottom .hamburger-menu-container .menu-icon {
   position: fixed;
-  top: 10px;
+  top: 25px;
   right: 15px;
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 header .header-bottom .hamburger-menu-container .menu-icon i {
   width: 100%;
@@ -94,18 +96,23 @@ header .header-bottom .hamburger-menu-container .sidebar-links .sidebar-link:hov
 header .header-bottom .hamburger-menu-container #menu-toggle:checked ~ .sidebar {
   display: block;
 }
-header .header-bottom .search-bar {
+header .header-bottom .header-btn-container {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: end;
-  margin: 20px;
+  margin-right: 40px;
 }
-header .header-bottom .search-bar .search {
-  width: 150px;
+header .header-bottom .header-btn-container .header-btn {
+  width: 100px;
   padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  color: #ffffff;
+  background-color: #4d5a49;
+  border: none;
+  cursor: pointer;
+}
+header .header-bottom .header-btn-container .header-btn:hover {
+  background-color: #6a7b64;
 }
 header .hero {
   position: relative;
@@ -140,7 +147,15 @@ header .hero-flex-container .hero-btn {
   cursor: pointer;
 }
 header .hero-flex-container .hero-btn:hover {
-  background-color: #6b7a69;
+  background-color: #6a7b64;
+}
+
+.btn {
+  padding: 5px 15px;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -154,7 +169,7 @@ header .hero-flex-container .hero-btn:hover {
   }
   header .header-bottom .nav-menu-container {
     display: block;
-    margin: 0 10px;
+    margin: 0 5px;
   }
   header .header-bottom nav ul li {
     display: inline;
