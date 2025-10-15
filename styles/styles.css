@@ -18,7 +18,7 @@ header .header-top {
 }
 header .header-top .logo-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
   max-width: 200px;
@@ -33,9 +33,10 @@ header .header-top .logo-container .logo-text {
 }
 header .header-top .search-bar {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: end;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 header .header-top .search-bar .search {
   width: 150px;
@@ -58,10 +59,8 @@ header .header-bottom .hamburger-menu-container #menu-toggle {
 }
 header .header-bottom .hamburger-menu-container .menu-icon {
   position: fixed;
-  top: 15px;
+  top: 10px;
   right: 15px;
-  width: 40px;
-  height: 40px;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -92,6 +91,18 @@ header .header-bottom .hamburger-menu-container .sidebar {
   transition: right 0.3s ease;
   z-index: 1;
   padding-top: 60px;
+}
+header .header-bottom .hamburger-menu-container .sidebar-links {
+  list-style-type: none;
+}
+header .header-bottom .hamburger-menu-container .sidebar-links .sidebar-link {
+  display: inline-block;
+  margin: 10px auto;
+  text-decoration: none;
+  color: black;
+}
+header .header-bottom .hamburger-menu-container .sidebar-links .sidebar-link:hover {
+  text-decoration: underline;
 }
 header .header-bottom .hamburger-menu-container #menu-toggle:checked ~ .sidebar {
   display: block;

@@ -22,7 +22,7 @@ header {
 
         .logo-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: start;
             align-items: center;
             max-width: 200px;
@@ -40,9 +40,10 @@ header {
 
         .search-bar {
             display: flex;
+            flex-wrap: nowrap;
             align-items: center;
             justify-content: end;
-            margin-right: 5px;
+            margin-right: 10px;
 
             .search {
                 width: 150px;
@@ -70,10 +71,9 @@ header {
 
             .menu-icon {
                 position: fixed;
-                top: 15px;
+                top: 10px;
                 right: 15px;
-                width: 40px;
-                height: 40px;
+
                 z-index: 2;
                 display: flex;
                 align-items: center;
@@ -109,6 +109,21 @@ header {
                 transition: right 0.3s ease;
                 z-index: 1;
                 padding-top: 60px;
+            }
+
+            .sidebar-links {
+                list-style-type: none;
+
+                .sidebar-link {
+                    display: inline-block;
+                    margin: 10px auto;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                .sidebar-link:hover {
+                    text-decoration: underline;
+                }
             }
 
             #menu-toggle:checked~.sidebar {
