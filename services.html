@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="/styles/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
     crossorigin="anonymous" />
 
@@ -18,31 +20,43 @@
 
 <body>
   <header>
-    <img class="logo" src="images/img-logo.png" alt="JPM Skincare logo" />
-    <p>JPM Hudvård</p>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="reference.html">Reference</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="search-bar">
-      <i class="fa fa-search" aria-hidden="true"></i>
-      <input type="search" placeholder="Sök..." aria-label="Sök" />
+    <div class="header-top">
+      <div class="logo-container">
+        <img class="logo-img" src="images/img-logo.png" alt="JPM Skincare logo" />
+        <p class="logo-text">JPM Hudvård</p>
+      </div>
+      <div class="search-bar">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search" type="search" placeholder="Sök..." aria-label="Sök" />
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a class="nav-link" href="about.html">About us</a></li>
+          <li><a class="nav-link active" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="reference.html">Reference</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- <div class="hamburger-menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div> -->
     </div>
   </header>
   <main>
-    <h1>Behandlingar</h1>
-    <p>
-      Hos oss på JPM Hudvård så är det behandlingarna som ligger i fokus. Vi
-      använder oss utav produkter av högsta kvalitet och anpassar självklart
-      varje behandling efter din hudtyp. Tveka inte på att boka en tid hos oss
-      direkt vare sig du vill ha en massage, ansiktsbehandling eller en
-      hudanalys!
-    </p>
+    <div class="first-treat-card">
+      <h1>Behandlingar</h1>
+      <p>
+        Hos oss på JPM Hudvård så är det behandlingarna som ligger i fokus. Vi
+        använder oss utav produkter av högsta kvalitet och anpassar självklart
+        varje behandling efter din hudtyp. Tveka inte på att boka en tid hos oss
+        direkt vare sig du vill ha en massage, ansiktsbehandling eller en
+        hudanalys!
+      </p>
+    </div>
     <button type="button">Boka behandling</button>
     <img src="/images/massage.jpg" alt="Kvinna som blir behandlad" />
     <div class="treat-card">
@@ -101,10 +115,14 @@
         <img class="logo" src="images/img-logo.png" alt="JPM Skincare logo" />
         <p>JPM Hudvård</p><br><br>
         <p>
-          Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdsspa - en plats för stillhet, skönhet och
-          återhämtning. Vårt team av sex erfarna terapeuter erbjuder skräddarsydda behandlingar inom hudvård, kemisk
-          peeling, portömning, massage, fransplock och pedikyr. Vi använder endast produkter av högsta kvalitet från
-          välrenommerade märken som Dermalogica, Medik8 och Murad för att säkerställa att din hud får den bästa möjliga
+          Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdsspa - en plats för stillhet, skönhet
+          och
+          återhämtning. Vårt team av sex erfarna terapeuter erbjuder skräddarsydda behandlingar inom hudvård,
+          kemisk
+          peeling, portömning, massage, fransplock och pedikyr. Vi använder endast produkter av högsta
+          kvalitet från
+          välrenommerade märken som Dermalogica, Medik8 och Murad för att säkerställa att din hud får den
+          bästa möjliga
           vården.
         </p>
       </div>
