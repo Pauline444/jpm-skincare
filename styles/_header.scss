@@ -12,7 +12,7 @@ header {
 
     .header-container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -35,21 +35,6 @@ header {
 
             .logo-text {
                 margin: 25px auto auto 5px;
-            }
-        }
-
-        .search-bar {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: end;
-            margin-right: 10px;
-
-            .search {
-                width: 150px;
-                padding: 5px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
             }
         }
     }
@@ -130,6 +115,21 @@ header {
                 display: block;
             }
         }
+
+        .search-bar {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: end;
+            margin: 20px;
+
+            .search {
+                width: 150px;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+        }
     }
 
     .hero {
@@ -182,13 +182,12 @@ header {
 
     header .header-bottom {
         display: flex;
-        justify-content: space-between;
-        margin: 0 100px;
+        justify-content: center;
+        align-items: center;
 
         .nav-menu-container {
             display: block;
-            align-items: center;
-            width: 500px;
+            margin: 0 10px;
         }
 
 
