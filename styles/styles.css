@@ -236,6 +236,14 @@ a {
   margin: 1rem auto;
 }
 
+h1, h2, h3 {
+  font-family: "Hedvig Letters Serif", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -255,6 +263,11 @@ a {
   max-width: 600px;
   margin: 2rem;
 }
+@media (min-width: 1024px) {
+  .about-section {
+    flex-direction: row;
+  }
+}
 
 .staff-section {
   display: flex;
@@ -269,7 +282,7 @@ a {
   width: 100%;
   max-width: 300px;
   margin: 2rem 0rem 0rem;
-  border: 15px, solid, #f4dad0;
+  border: 15px solid #f4dad0;
 }
 .staff-section .staff-card .role {
   max-width: 300px;
@@ -278,6 +291,12 @@ a {
 .staff-section .staff-card .bio {
   max-width: 300px;
   padding: 0rem 0rem 1rem;
+}
+@media (min-width: 1024px) {
+  .staff-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .main-container {

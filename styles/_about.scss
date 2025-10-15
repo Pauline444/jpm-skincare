@@ -1,6 +1,13 @@
 @use "mixins" as *;
 @use "variables" as *;
 
+h1, h2, h3 {
+    font-family: $font-secondary;
+}
+
+p {
+    font-family: $font-primary;
+}
 
 .about-section {
     display: flex;
@@ -16,7 +23,6 @@
         h1 {
             margin-bottom: 2rem;
         }
-
     }
 
     .about-image {
@@ -27,6 +33,9 @@
         }
     }
 
+    @include desktop {
+    flex-direction: row;
+    }
 }
 
 .staff-section {
@@ -38,17 +47,12 @@
     background-color: $color-beige-light;
     padding: 2rem;
 
-    .staff-container {
-        
-
-    }
-
     .staff-card {
         img {
             width: 100%;
             max-width: 300px;
             margin: 2rem 0rem 0rem;
-            border: 15px, solid, $color-pink-light
+            border: 15px solid $color-pink-light;
         }
 
         .role {
@@ -61,7 +65,11 @@
             max-width: 300px;
             padding: 0rem 0rem 1rem;
         }
+    }
 
+    @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
     }
 
 }
