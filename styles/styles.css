@@ -320,4 +320,36 @@ a {
     flex-direction: row;
     padding: 30px;
   }
+}
+.main-container .main-services h3 {
+  text-align: center;
+  padding: 20px;
+  font-size: x-large;
+}
+.main-container .main-services-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-services-cards .main-service-card img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  padding: 10px;
+  margin-top: 30px;
+}
+.main-container .main-services-cards .main-service-card .btn {
+  padding: 10px 20px;
+  margin: 30 auto;
+  background-color: #865f47;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .main-container .main-services-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=styles.css.map */
