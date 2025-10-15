@@ -217,6 +217,23 @@ a {
   margin: 1rem 0;
 }
 
+.cards-section {
+  background: #f4ede5;
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.cards-section .treat-card {
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1rem auto;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -259,21 +276,6 @@ a {
 .staff-section .staff-card .bio {
   max-width: 300px;
   padding: 0rem 0rem 1rem;
-.cards-section {
-  background: #f4ede5;
-  box-sizing: border-box;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 1rem;
-}
-.cards-section .treat-card {
-  width: 90%;
-  max-width: 600px;
-  background: #fff;
-  padding: 1.5rem;
-  margin: 1rem auto;
 }
 
 .main-container {
