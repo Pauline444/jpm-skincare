@@ -1,0 +1,67 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0rem 0rem;
+
+    .about-text {
+        max-width: 600px;
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    .about-image {
+        img {
+        width: 100%;
+        max-width: 600px;
+        margin: 2rem;
+        }
+    }
+
+}
+
+.staff-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $color-beige-light;
+    padding: 2rem;
+
+    .staff-container {
+        
+
+    }
+
+    .staff-card {
+        img {
+            width: 100%;
+            max-width: 300px;
+            margin: 2rem 0rem 0rem;
+            border: 15px, solid, $color-pink-light
+        }
+
+        .role {
+            max-width: 300px;
+            padding: 0rem 0rem 1rem;
+
+        }
+
+        .bio {
+            max-width: 300px;
+            padding: 0rem 0rem 1rem;
+        }
+
+    }
+
+}
