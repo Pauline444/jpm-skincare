@@ -12,7 +12,7 @@ header {
 
     .header-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -175,31 +175,40 @@ header {
 }
 
 
-@include desktop {
+@include tablet {
     header .header-bottom .hamburger-menu-container {
         display: none;
     }
 
-    header .header-bottom .nav-menu-container {
-        display: block;
-    }
+    header .header-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 100px;
 
-    nav ul li {
-        display: inline;
-    }
+        .nav-menu-container {
+            display: block;
+            align-items: center;
+            width: 500px;
+        }
 
-    .nav-link {
-        text-decoration: none;
-        color: black;
-        padding: 11px 5px;
-        cursor: pointer;
-    }
 
-    .nav-link:hover {
-        background-color: #f4ede5;
-    }
+        nav ul li {
+            display: inline;
+        }
 
-    .active {
-        background-color: #f4ede5;
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            padding: 11px 5px;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            background-color: #f4ede5;
+        }
+
+        .active {
+            background-color: #f4ede5;
+        }
     }
 }
