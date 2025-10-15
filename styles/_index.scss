@@ -48,4 +48,44 @@
             padding: 30px;
         }
     }
+
+    .main-services {
+        & h3 {
+            text-align: center;
+            padding: 20px;
+            font-size: x-large;
+        }
+
+        &-cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main-service-card {
+                & img {
+                    max-width: 400px;
+                    height: auto;
+                    display: block;
+                    padding: 10px;
+                    margin-top: 30px;
+                }
+
+                & .btn {
+                    padding: 10px 20px;
+                    margin: 30 auto;
+                    background-color: $color-brown;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+
+            @include tablet {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+
+    }
 }
