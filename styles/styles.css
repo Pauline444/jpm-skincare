@@ -352,4 +352,34 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+
+footer {
+  background-color: #e4d4c3;
+  padding: 20px;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-content .logo-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  max-width: 200px;
+  padding: 8px;
+}
+footer .footer-content .logo-container .logo-img {
+  max-width: 50px;
+  border-radius: 50%;
+}
+footer .footer-content .logo-container .logo-text {
+  margin: 0 0 0 5px;
+  color: #865f47;
+  font-family: "Hedvig Letters Serif", serif;
+}
+footer .footer-content .footer-info-text {
+  max-width: 600px;
 }/*# sourceMappingURL=styles.css.map */
