@@ -207,11 +207,11 @@ a {
         }
 
 
-        nav ul li {
+        .link {
             display: inline;
         }
 
-        .nav-link {
+        .nav-menu-link {
             font-size: smaller;
             text-decoration: none;
             color: black;
@@ -220,7 +220,7 @@ a {
             cursor: pointer;
         }
 
-        .nav-link:hover {
+        .nav-menu-link:hover {
             background-color: #f4ede5;
         }
 
