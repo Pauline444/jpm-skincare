@@ -10,6 +10,7 @@ p {
 }
 
 .about-section {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,11 +33,8 @@ p {
         margin: 2rem;
         }
     }
-
-    @include desktop {
-    flex-direction: row;
-    }
 }
+
 
 .staff-section {
     display: flex;
@@ -47,29 +45,37 @@ p {
     background-color: $color-beige-light;
     padding: 2rem;
 
+    .staff-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    }
+
     .staff-card {
-        img {
-            width: 100%;
-            max-width: 300px;
-            margin: 2rem 0rem 0rem;
-            border: 15px solid $color-pink-light;
+    img {
+        width: 100%;
+        max-width: 300px;
+        margin: 2rem 0 0;
+        border: 15px solid $color-pink-light;
         }
 
-        .role {
-            max-width: 300px;
-            padding: 0rem 0rem 1rem;
-
+    .bio {
+        max-width: 300px;
+        padding-bottom: 1rem;
         }
 
-        .bio {
-            max-width: 300px;
-            padding: 0rem 0rem 1rem;
-        }
     }
 
-    @include desktop {
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
+}
 
+@include desktop {
+    .about-section {
+        flex-direction: row;
+        } 
+
+    .staff-article {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
