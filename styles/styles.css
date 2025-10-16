@@ -216,6 +216,9 @@ a {
   width: 100%;
   max-width: 600px;
   height: auto;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 1.5rem;
   margin: 1rem 0;
 }
@@ -263,6 +266,22 @@ a {
   align-self: center;
 }
 
+@media (min-width: 768px) {
+  .main-treat-card {
+    max-width: 1000px;
+    margin: 0 auto 1.5rem auto;
+  }
+  .cta-btn {
+    display: block;
+    margin: 0 auto 3rem auto;
+    width: 50%;
+    max-width: 400px;
+    font-size: 1.2rem;
+  }
+  .img-service {
+    display: none;
+  }
+}
 .about-section {
   display: flex;
   flex-direction: column;
