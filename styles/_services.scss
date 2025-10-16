@@ -1,5 +1,5 @@
-@use "mixins" as *;
 @use "variables" as *;
+@use "mixins" as *;
 
 .main-services {
   display: flex;
@@ -27,6 +27,8 @@
   width: 100%;
   max-width: 600px;
   height: auto;
+  max-height: 400px;
+  object-fit: cover;
   padding: 1.5rem;
   margin: 1rem 0;
 }
@@ -46,5 +48,93 @@
     background: #fff;
     padding: 1.5rem;
     margin: 1rem auto;
+    text-align: center;
+  }
+
+  .treat-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    display: none;
+  }
+
+  .treat-text {
+    flex: 1;
+  }
+}
+
+.cta-btn {
+  background-color: $color-green-dark;
+  color: $color-white;
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem auto;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-green;
+  }
+}
+
+.book-btn {
+  background-color: $color-brown;
+  color: $color-white;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  align-self: center;
+}
+
+@include tablet {
+  .main-treat-card {
+    max-width: 1000px;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .cta-btn {
+    display: block;
+    margin: 0 auto 3rem auto;
+    width: 50%;
+    max-width: 400px;
+    font-size: 1.2rem;
+  }
+
+  .img-service {
+    display: none;
+  }
+
+  .cards-section {
+    .treat-card-alt {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      padding: 1.5rem 2rem;
+      gap: 2rem;
+
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+
+      .treat-img {
+        display: block;
+        width: 50%;
+        height: 400px;
+        object-fit: cover;
+      }
+
+      .treat-text {
+        width: 50%;
+        text-align: left;
+
+        .book-btn {
+          align-self: flex-start;
+        }
+      }
+    }
   }
 }

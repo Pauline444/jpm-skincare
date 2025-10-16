@@ -1,0 +1,42 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+footer {
+    background-color: $color-beige-dark;
+    padding: 20px;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: start;
+            align-items: center;
+            max-width: 200px;
+            padding: 8px;
+
+            .logo-img {
+                max-width: 50px;
+                border-radius: 50%;
+            }
+
+            .logo-text {
+                margin: 0 0 0 5px;
+                color: $color-brown;
+                font-family: $font-secondary;
+            }
+        }
+
+        .footer-info-text {
+            max-width: 600px;
+        }
+    }
+
+    .fab,
+    .fa-solid {
+        color: black;
+    }
+}

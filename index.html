@@ -13,7 +13,8 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
         crossorigin="anonymous" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <title>JPM Skincare</title>
 </head>
 
@@ -28,13 +29,13 @@
             </div>
             <div class="header-bottom menu-container">
                 <nav class="nav-menu-container">
-                    <ul class="nav-links">
-                        <li><a href="index.html" class="nav-link active">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About us</a></li>
-                        <li><a class="nav-link" href="services.html">Services</a></li>
-                        <li><a class="nav-link" href="reference.html">Reference</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
+
+                    <a href="index.html" class="nav-menu-link active">Home</a>
+                    <a class="nav-menu-link" href="about.html">About us</a>
+                    <a class="nav-menu-link" href="services.html">Services</a>
+                    <a class="nav-menu-link" href="reference.html">Reference</a>
+                    <a class="nav-menu-link" href="contact.html">Contact</a>
+
                 </nav>
                 <div class="hamburger-menu-container">
                     <input type="checkbox" id="menu-toggle" />
@@ -60,7 +61,7 @@
         </section>
         <div class="hero">
             <div>
-                <img class="hero-img" src="images/herobeige.jpg" alt="hero bild på en vägg med skönhetsprodukter">
+                <img class="hero-img" src="images/herolight.jpg" alt="hero bild på en vägg med skönhetsprodukter">
             </div>
             <div class="hero-flex-container">
                 <div class="hero-text">
@@ -74,69 +75,87 @@
         <section class="main-container">
             <div class="main-about-us">
                 <div class="main-about-us-text">
-                    <h2>Om oss</h2>
-                    <p>Välkommen till JPM Skincare - din oas för hudvård och välbefinnande i hjärtat av Stockholm. Vi är
-                        stolta
-                        över att erbjuda en rad exklusiva behandlingar som är utformade för att vårda och förbättra din
-                        hud,
-                        samtidigt som de ger dig en stund av avkoppling och lyx.</p>
-                    <h3>Hitta till våran fantastiska salong</h3>
-                    <p>Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdssalong - en plats för stillhet,
-                        skönhet
-                        och återhämtning. Vårt team av sex erfarna terapeuter erbjuder skräddarsydda behandlingar inom
-                        hudvård, kemisk peeling, portömning, massage, fransplock och pedikyr.</p>
-                    hudvård, kemisk peeling, portömning, massage, fransplock och pedikyr.</p>
 
-                    <p>Varje möte hos oss är en stund av ro, där professionell expertis möter omtanke och harmoni.
-                        Vi
-                        arbetar med noggrant utvalda produkter och tekniker som vårdar huden på djupet och väcker
-                        den
-                        naturliga lystern till liv.</p>
+                    <div class="main-about-us-text1">
+                        <h2>Om oss</h2>
+                        <p>Välkommen till JPM Skincare - din oas för hudvård och välbefinnande i hjärtat av Stockholm.
+                            Vi är
+                            stolta
+                            över att erbjuda en rad exklusiva behandlingar som är utformade för att vårda och förbättra
+                            din
+                            hud,
+                            samtidigt som de ger dig en stund av avkoppling och lyx.</p>
+                    </div>
+                    <div class="main-about-us-text2">
 
-                    <p>Välkommen till en oas där tid och tanke får vila - och där du står i centrum.</p>
+                        <h3>Hitta till våran fantastiska salong</h3>
+                        <p>Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdssalong - en plats för stillhet,
+                            skönhet
+                            och återhämtning. Vårt team av sex erfarna terapeuter erbjuder skräddarsydda behandlingar
+                            inom
+                            hudvård, kemisk peeling, portömning, massage, fransplock och pedikyr.
+                            hudvård, kemisk peeling, portömning, massage, fransplock och pedikyr.</p>
+
+                        <p>Varje möte hos oss är en stund av ro, där professionell expertis möter omtanke och
+                            harmoni.
+                            Vi
+                            arbetar med noggrant utvalda produkter och tekniker som vårdar huden på djupet och
+                            väcker
+                            den
+                            naturliga lystern till liv.</p>
+
+                        <p>Välkommen till en oas där tid och tanke får vila - och där du står i centrum.</p>
+                    </div>
                 </div>
                 <div class="main-about-us-img">
                     <img src="images/under-hero.jpg" alt="bild på en kvinna som får behandling med varma stenar">
                 </div>
             </div>
-            <div class="main-services">
+            <div class="main-services container">
                 <h3>Våra behandlingar</h3>
                 <div class="main-services-cards">
                     <div class="main-service-card">
                         <img src="images/ansiktsbehandlingar.jpg" alt="bild på en kvinna som får ansiktsbehandling">
-                        <button class="btn">Ansiktsbehandling</button>
+                        <a href="services.html" class="btn">Ansiktsbehandling</a>
                     </div>
-                    <div class="main-service-card">
-                        <img src="images/eyebrows.jpg" alt="bild på en kvinna som får fransplock">
-                        <button class="btn">Fransar & Bryn</button>
-                    </div>
-                    <div class="main-service-card">
-                        <img src="images/kemisk-peeling.jpg" alt="bild på en kvinna som får kemisk peeling i ansiktet">
-                        <button class="btn">kemisk peeling</button>
+                    <div class="two-treatments">
+                        <div class="main-service-card">
+                            <img src="images/eyebrows.jpg" alt="bild på en kvinna som får fransplock">
+                            <a href="services.html" class="btn">Fransar & Bryn</a>
+                        </div>
+                        <div class="main-service-card">
+                            <img src="images/kemisk-peeling.jpg"
+                                alt="bild på en kvinna som får kemisk peeling i ansiktet">
+                            <a href="services.html" class="btn">kemisk peeling</a>
+                        </div>
                     </div>
                     <div class="main-service-card">
                         <img src="images/massage.jpg" alt="bild på en kvinna som får ansiktsbehandling">
-                        <button class="btn">Massage</button>
+                        <a href="services.html" class="btn">Massage</a>
                     </div>
                     <div class="main-service-card">
                         <img src="images/pedikyr.jpg" alt="bild på en kvinna som får ansiktsbehandling">
-                        <button class="btn">Pedikyr</button>
+                        <a href="services.html" class="btn">Pedikyr</a>
                     </div>
                 </div>
             </div>
-            <div class="main-products">
-                <h3>Produkter vi använder</h3>
-                <div class="main-products-logos">
+            <div class="main-products container">
+                <h3 class="text-center mt-5">Produkter vi använder</h3>
+                <div class="main-products-logos d-flex flex-wrap justify-content-around mb-5">
                     <div class="main-product-logo">
-                        <img src="images/" alt="Dermalogica logo">
+                        <img src="images/samarbeten1.jpg" class="m-3 rounded" alt="Cepage hudkräm logo">
                     </div>
                     <div class="main-product-logo">
-                        <img src="images/medik8-logo.png" alt="Medik8 logo">
+                        <img src="images/samarbeten2.jpg" class="m-3 rounded" alt="Suits You serum logo">
                     </div>
                     <div class="main-product-logo">
-                        <img src="images/murad-logo.png" alt="Murad logo">
+                        <img src="images/samarbeten3.jpg" class="m-3 rounded" alt="Elixir oil serum logo">
+                    </div>
+                    <div class="main-product-logo">
+                        <img src="images/samarbeten4.jpg" class="m-3 rounded" alt="Monat C radiance hudkräm logo">
                     </div>
                 </div>
+            </div>
         </section>
         <section class="main-carusel">
             <h3>Kundomdömen</h3>
@@ -186,50 +205,71 @@
         </section>
     </main>
     <footer>
-        <div class="footer-content">
-            <div class="logo-container">
-                <img class="logo" src="images/img-logo.png" alt="JPM Skincare logo" />
-                <p>JPM Hudvård</p><br><br>
+        <div class="footer-content text-center">
+            <div class="align-items-start">
+                <!-- <div class="footer-flexbox-logo"> -->
+                <div class="logo-container mx-5">
+                    <img class="logo-img" src="images/img-logo.png" alt="JPM Skincare logo" />
+                    <p class="logo-text">JPM Hudvård</p><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="footer-info-text col mx-5">
+                <h5>Om oss</h5>
                 <p>
-                    Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdsspa - en plats för stillhet, skönhet
-                    och
-                    återhämtning. Vårt team av sex erfarna terapeuter erbjuder skräddarsydda behandlingar inom hudvård,
-                    kemisk
-                    peeling, portömning, massage, fransplock och pedikyr. Vi använder endast produkter av högsta
-                    kvalitet från
-                    välrenommerade märken som Dermalogica, Medik8 och Murad för att säkerställa att din hud får den
-                    bästa möjliga
-                    vården.
+                    Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdsspa - en plats för stillhet,
+                    skönhet och
+                    återhämtning.
                 </p>
+                <p>Vi arbetar med noggrant utvalda produkter och tekniker som vårdar huden på djupet och
+                    väcker
+                    den
+                    naturliga lystern till liv.</p>
+
+                <p>Välkommen till en oas där tid och tanke får vila - och där du står i centrum.</p>
             </div>
-            <div class="contact-footer">
-                <div class="footer-adress">
-                    <h5>Address</h5>
-                    <p>Hudvårdsgatan 666</p>
-                    <p>116 66 Stockholm</p>
-                    <p>Phone: +46 8 123 456 78</p>
-                </div>
-                <div class="footer-openhours">
-                    <h5>Öppettider </h5>
-                    <p>mån-fre 10-20 </p>
-                    <p>lör 10-16</p>
+
+
+            <div class="footer-flexbox-contact col">
+                <div class="contact-footer mx-5">
+                    <div class="footer-adress">
+                        <h5>Address</h5>
+                        <p>Hudvårdsgatan 666</br>
+                            116 66 Stockholm</br>
+                            Phone: +46 8 123 456 78</p>
+                    </div>
+                    <div class="footer-openhours">
+                        <h5>Öppettider </h5>
+                        <p>mån-fre 10-20 </br>
+                            lör 10-16</p>
+                    </div>
                 </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="reference.html">Reference</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+        </div>
+        <nav class="navbar-expand">
+            <div class="footer-links my-3">
+                <ul class="navbar-nav nav-underline justify-content-center">
+                    <li class="nav-item p-3"><a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-3"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item p-3"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item p-3"><a class="nav-link" href="reference.html">Reference</a></li>
+                    <li class="nav-item p-3"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <p>&copy; 2024 JPM Skincare. All rights reserved.</p>
-            <div class="social-media">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
-                <a href="#" aria-label="Mail"><i class="fa-solid fa-envelope"></i></a>
+        </nav>
+        <div class="container overflow-hidden text-center">
+            <div class="row gx-5">
+                <div class="social-media my-3">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" aria-label="Mail"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <div class="row">
+                    <p>&copy; 2024 JPM Skincare. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </footer>

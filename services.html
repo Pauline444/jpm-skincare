@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
     crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
   <title>Services JPM Skincare</title>
 </head>
@@ -29,13 +31,13 @@
       </div>
       <div class="header-bottom menu-container">
         <nav class="nav-menu-container">
-          <ul class="nav-links">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a class="nav-link" href="about.html">About us</a></li>
-            <li><a class="nav-link active" href="services.html">Services</a></li>
-            <li><a class="nav-link" href="reference.html">Reference</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
+
+          <a href="index.html" class="nav-menu-link">Home</a>
+          <a class="nav-menu-link" href="about.html">About us</a>
+          <a class="nav-menu-link active" href="services.html">Services</a>
+          <a class="nav-menu-link" href="reference.html">Reference</a>
+          <a class="nav-menu-link" href="contact.html">Contact</a>
+
         </nav>
         <div class="hamburger-menu-container">
           <input type="checkbox" id="menu-toggle" />
@@ -60,94 +62,149 @@
       </div>
     </section>
   </header>
-  <main>
-    <div class="first-treat-card">
+  <main class="main-services">
+    <div class="main-treat-card">
       <h1>Behandlingar</h1>
       <p>
-        Hos oss på JPM Hudvård så är det behandlingarna som ligger i fokus. Vi
-        använder oss utav produkter av högsta kvalitet och anpassar självklart
-        varje behandling efter din hudtyp. Tveka inte på att boka en tid hos oss
-        direkt vare sig du vill ha en massage, ansiktsbehandling eller en
-        hudanalys!
+        Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdsspa - en
+        plats för stillhet, skönhet och återhämtning. Vårt team av sex erfarna
+        terapeuter erbjuder skräddarsydda behandlingar inom hudvård, kemisk
+        peeling, portömning, massage, fransplock och pedikyr. Vi använder
+        endast produkter av högsta kvalitet från välrenommerade märken som
+        Dermalogica, Medik8 och Murad för att säkerställa att din hud får den
+        bästa möjliga vården.
       </p>
     </div>
-    <button type="button">Boka behandling</button>
-    <img src="/images/massage.jpg" alt="Kvinna som blir behandlad" />
-    <div class="treat-card">
-      <h2>Ansiktsbehandlingar</h2>
-      <p>
-        Vi har ett stort urval av ansiktsbehandlingar med professionella
-        hudvårdsprodukter. Vi har allt från klassisk ansiktsbehandling till
-        skräddarsydda ansiktsbehandlingar utifrån dina behov och önskemål.
-        Oavsett om du önskar en avslappnande och dränerande massage, eller en
-        djupgående portömning så hjälper vi dig.
-      </p>
-      <button type="button">Boka</button>
-    </div>
-    <div class="treat-card">
-      <h2>Fransar och bryn</h2>
-      <p>
-        Framhäv och forma dina fransar och bryn med hjälp av färg, browlift
-        samt lashlift. Vi formar dina bryn med pincett eller vaxning, och det
-        ingår alltid en konsultation innan behandlingens start.
-      </p>
-      <button type="button">Boka</button>
-    </div>
-    <div class="treat-card">
-      <h2>Kemisk peeling</h2>
-      <p>
-        Vi har ett brett urval av kraftfulla och säkra kemiska peelingar. Vi
-        väljer tillsammans med dig som kund en passande pensling efter dina
-        behov och önskemål. Vi erbjuder skräddarsydda kurer med paketpris.
-      </p>
-      <button type="button">Boka</button>
-    </div>
-    <div class="treat-card">
-      <h2>Massage</h2>
-      <p>
-        Unna dig en värmande hot stone massage för värkande leder och muskler
-        eller en djupgående klassisk svensk massage där muskelspänningar
-        lösgörs. Vi tar hjälp av aromaterapins kraft i alla våra
-        massagebehandlingar.
-      </p>
-      <button type="button">Boka</button>
-    </div>
-    <div class="treat-card">
-      <h2>Pedikyr</h2>
-      <p>
-        Alla våra pedikyrer inleds med ett värmande fotbad, därefter avlägsnas
-        förhårdnader och en uppiggande fot- och badmassage. Vård av
-        nagelplattor och nagelband ingår. Behandlingen avslutas med lackning
-        av tånaglarna.
-      </p>
-      <button type="button">Boka</button>
-    </div>
-  </main>
-  <footer>
-    <div class="footer-content">
-      <div class="logo-container">
-        <img class="logo" src="images/img-logo.png" alt="JPM Skincare logo" />
-        <p>JPM Hudvård</p><br><br>
-        <p>
-          Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdsspa - en plats för stillhet, skönhet
-          och
-          återhämtning. Vårt team av sex erfarna terapeuter erbjuder skräddarsydda behandlingar inom hudvård,
-          kemisk
-          peeling, portömning, massage, fransplock och pedikyr. Vi använder endast produkter av högsta
-          kvalitet från
-          välrenommerade märken som Dermalogica, Medik8 och Murad för att säkerställa att din hud får den
-          bästa möjliga
-          vården.
-        </p>
-      </div>
-      <div class="contact-footer">
-        <div class="footer-adress">
-          <h5>Address</h5>
-          <p>Hudvårdsgatan 666</p>
-          <p>116 66 Stockholm</p>
-          <p>Phone: +46 8 123 456 78</p>
+    <button class="cta-btn" type="button">Boka behandling</button>
+    <img class="img-service" src="/images/massage.jpg" alt="Kvinna som får behandling" />
+    <section class="cards-section">
+      <div class="treat-card treat-card-alt">
+        <img class="treat-img" src="/images/ansiktsbehandlingar.jpg" alt="Ansiktsbehandlingar" />
+        <div class="treat-text">
+          <h2>Ansiktsbehandlingar</h2>
+          <p>Vi har ett stort urval av ansiktsbehandlingar med professionella hudvårdsprodukter.
+            Vi har allt från klassisk ansiktsbehandling till skräddarsydda ansiktsbehandlingar
+            utifrån dina behov och önskemål. Oavsett om du önskar en avslappnande och dränerande massage,
+            eller en djupgående portömning så hjälper vi dig.</p>
+          <button class="book-btn" type="button">Boka</button>
         </div>
-    </footer>
+      </div>
+
+      <div class="treat-card treat-card-alt reverse">
+        <img class="treat-img" src="/images/eyebrows.jpg" alt="Fransar och bryn" />
+        <div class="treat-text">
+          <h2>Fransar och bryn</h2>
+          <p>Framhäv och forma dina fransar och bryn med hjälp av färg, browlift samt lashlift.
+            Vi formar dina bryn med pincett eller vaxning, och det ingår alltid en konsultation
+            innan behandlingens start.</p>
+          <button class="book-btn" type="button">Boka</button>
+        </div>
+      </div>
+
+      <div class="treat-card treat-card-alt">
+        <img class="treat-img" src="/images/kemisk-peeling.jpg" alt="Kemisk peeling" />
+        <div class="treat-text">
+          <h2>Kemisk peeling</h2>
+          <p>Vi har ett brett urval av kraftfulla och säkra kemiska peelingar.
+            Vi väljer tillsammans med dig som kund en passande pensling efter dina behov och önskemål.
+            Vi erbjuder skräddarsydda kurer med paketpris.</p>
+          <button class="book-btn" type="button">Boka</button>
+        </div>
+      </div>
+
+      <div class="treat-card treat-card-alt reverse">
+        <img class="treat-img" src="/images/img-massage-web.jpg" alt="Massage" />
+        <div class="treat-text">
+          <h2>Massage</h2>
+          <p>Unna dig en värmande hot stone massage för värkande leder och muskler
+            eller en djupgående klassisk svensk massage där muskelspänningar lösgörs.
+            Vi tar hjälp av aromaterapins kraft i alla våra massagebehandlingar.</p>
+          <button class="book-btn" type="button">Boka</button>
+        </div>
+      </div>
+
+      <div class="treat-card treat-card-alt">
+        <img class="treat-img" src="/images/pedikyr.jpg" alt="Pedikyr" />
+        <div class="treat-text">
+          <h2>Pedikyr</h2>
+          <p>Alla våra pedikyrer inleds med ett värmande fotbad, därefter avlägsnas förhårdnader
+            och en uppiggande fot- och badmassage. Vård av nagelplattor och nagelband ingår.
+            Behandlingen avslutas med lackning av tånaglarna.</p>
+          <button class="book-btn" type="button">Boka</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content text-center">
+      <div class="align-items-start">
+        <!-- <div class="footer-flexbox-logo"> -->
+        <div class="logo-container mx-5">
+          <img class="logo-img" src="images/img-logo.png" alt="JPM Skincare logo" />
+          <p class="logo-text">JPM Hudvård</p><br><br>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="footer-info-text col mx-5">
+        <h5>Om oss</h5>
+        <p>
+          Mitt i hjärtat av Stockholm finner du vårt exklusiva hudvårdsspa - en plats för stillhet,
+          skönhet och
+          återhämtning.
+        </p>
+        <p>Vi arbetar med noggrant utvalda produkter och tekniker som vårdar huden på djupet och
+          väcker
+          den
+          naturliga lystern till liv.</p>
+
+        <p>Välkommen till en oas där tid och tanke får vila - och där du står i centrum.</p>
+      </div>
+
+
+      <div class="footer-flexbox-contact col">
+        <div class="contact-footer mx-5">
+          <div class="footer-adress">
+            <h5>Address</h5>
+            <p>Hudvårdsgatan 666</br>
+              116 66 Stockholm</br>
+              Phone: +46 8 123 456 78</p>
+          </div>
+          <div class="footer-openhours">
+            <h5>Öppettider </h5>
+            <p>mån-fre 10-20 </br>
+              lör 10-16</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar-expand">
+      <div class="footer-links my-3">
+        <ul class="navbar-nav nav-underline justify-content-center">
+          <li class="nav-item p-3"><a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item p-3"><a class="nav-link" href="about.html">About us</a></li>
+          <li class="nav-item p-3"><a class="nav-link active" aria-current="page" href="services.html">Services</a></li>
+          <li class="nav-item p-3"><a class="nav-link" href="reference.html">Reference</a></li>
+          <li class="nav-item p-3"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container overflow-hidden text-center">
+      <div class="row gx-5">
+        <div class="social-media my-3">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
+          <a href="#" aria-label="Mail"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="row">
+          <p>&copy; 2024 JPM Skincare. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
