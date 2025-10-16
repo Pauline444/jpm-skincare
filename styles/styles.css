@@ -240,6 +240,17 @@ a {
   margin: 1rem auto;
   text-align: center;
 }
+.cards-section .treat-img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1rem;
+  display: none;
+}
+.cards-section .treat-text {
+  flex: 1;
+}
 
 .cta-btn {
   background-color: #4d5a49;
@@ -280,6 +291,30 @@ a {
   }
   .img-service {
     display: none;
+  }
+  .cards-section .treat-card-alt {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    padding: 1.5rem 2rem;
+    gap: 2rem;
+  }
+  .cards-section .treat-card-alt.reverse {
+    flex-direction: row-reverse;
+  }
+  .cards-section .treat-card-alt .treat-img {
+    display: block;
+    width: 50%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cards-section .treat-card-alt .treat-text {
+    width: 50%;
+    text-align: left;
+  }
+  .cards-section .treat-card-alt .treat-text .book-btn {
+    align-self: flex-start;
   }
 }
 .about-section {
