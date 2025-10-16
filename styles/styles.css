@@ -172,10 +172,10 @@ a {
     display: block;
     margin-right: 45px;
   }
-  header .header-bottom nav ul li {
+  header .header-bottom .link {
     display: inline;
   }
-  header .header-bottom .nav-link {
+  header .header-bottom .nav-menu-link {
     font-size: smaller;
     text-decoration: none;
     color: black;
@@ -183,7 +183,7 @@ a {
     border-radius: 20px;
     cursor: pointer;
   }
-  header .header-bottom .nav-link:hover {
+  header .header-bottom .nav-menu-link:hover {
     background-color: #f4ede5;
   }
   header .header-bottom .active {
@@ -462,4 +462,8 @@ footer .footer-content .logo-container .logo-text {
 }
 footer .footer-content .footer-info-text {
   max-width: 600px;
+}
+footer .fab,
+footer .fa-solid {
+  color: black;
 }/*# sourceMappingURL=styles.css.map */
