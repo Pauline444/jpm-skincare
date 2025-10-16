@@ -252,14 +252,6 @@ a {
   flex: 1;
 }
 
-h1, h2, h3 {
-  font-family: "Hedvig Letters Serif", serif;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-}
-
 .cta-btn {
   background-color: #4d5a49;
   color: #ffffff;
@@ -325,6 +317,14 @@ p {
     align-self: flex-start;
   }
 }
+h1, h2, h3 {
+  font-family: "Hedvig Letters Serif", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -369,7 +369,7 @@ p {
 .staff-section .bio {
   margin: 0 auto;
   max-width: 350px;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .main-container {
@@ -445,8 +445,33 @@ p {
   }
 }
 
+.main-products-container {
+  background-color: #f4ede5;
+  padding: 2cap;
+}
+
 .main-product-logo img {
   max-width: 200px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.main-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0rem 3rem;
+}
+.main-carousel .main-carousel-text {
+  width: 100%;
+  max-width: 500px;
+  padding: 3rem;
 }
 
 footer {
