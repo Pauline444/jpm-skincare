@@ -252,6 +252,14 @@ a {
   flex: 1;
 }
 
+h1, h2, h3 {
+  font-family: "Hedvig Letters Serif", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
 .cta-btn {
   background-color: #4d5a49;
   color: #ffffff;
@@ -325,6 +333,11 @@ a {
   text-align: center;
   padding: 2rem 0rem 0rem;
 }
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+  }
+}
 .about-section .about-text {
   max-width: 600px;
 }
@@ -338,6 +351,7 @@ a {
 }
 
 .staff-section {
+  background-color: #f4ede5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -346,19 +360,16 @@ a {
   background-color: #f4ede5;
   padding: 2rem;
 }
-.staff-section .staff-card img {
+.staff-section img {
   width: 100%;
   max-width: 300px;
-  margin: 2rem 0rem 0rem;
-  border: 15px, solid, #f4dad0;
+  margin: 2rem 0 0;
+  border: 15px solid #f4dad0;
 }
-.staff-section .staff-card .role {
-  max-width: 300px;
-  padding: 0rem 0rem 1rem;
-}
-.staff-section .staff-card .bio {
-  max-width: 300px;
-  padding: 0rem 0rem 1rem;
+.staff-section .bio {
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 1rem;
 }
 
 .main-container {
