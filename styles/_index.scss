@@ -90,10 +90,38 @@
     }
 }
 
+.main-products-container {
+    background-color: $color-beige-light;
+    padding: 2cap;
+
+}
+
 .main-product-logo {
 
 
     img {
         max-width: 200px;
+    }
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+
+.main-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0rem 3rem;
+
+    .main-carousel-text {
+        width: 100%;
+        max-width: 500px;
+        padding: 3rem;
     }
 }
