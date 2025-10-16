@@ -434,6 +434,10 @@ a {
   }
 }
 
+.main-product-logo img {
+  max-width: 200px;
+}
+
 footer {
   background-color: #e4d4c3;
   padding: 20px;
