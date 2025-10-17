@@ -31,7 +31,7 @@ header .header-top .logo-container .logo-img {
 header .header-top .logo-container .logo-text {
   margin: 0 0 0 5px;
   color: #865f47;
-  font-family: "Hedvig Letters Serif", serif;
+  font-family: "Montserrat", sans-serif;
 }
 header .header-bottom {
   padding: 10px 0;
@@ -551,14 +551,6 @@ p {
   padding: 3rem;
 }
 
-h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
-}
-
-p {
-  font-family: "Hedvig Letters Serif", serif;
-}
-
 h1 {
   text-align: center;
   padding-top: 1rem;
@@ -657,7 +649,7 @@ h1 {
 
 footer {
   background-color: #e4d4c3;
-  padding: 20px;
+  padding: 10px;
 }
 footer .footer-content {
   display: flex;
@@ -679,12 +671,13 @@ footer .footer-content .logo-container .logo-img {
 footer .footer-content .logo-container .logo-text {
   margin: 0 0 0 5px;
   color: #865f47;
-  font-family: "Hedvig Letters Serif", serif;
-}
-footer .footer-content .footer-info-text {
-  max-width: 600px;
+  font-family: "Montserrat", sans-serif;
 }
 footer .fab,
 footer .fa-solid {
   color: black;
+}
+footer .footer-info-text {
+  max-width: 600px;
+  min-width: 250px;
 }/*# sourceMappingURL=styles.css.map */
