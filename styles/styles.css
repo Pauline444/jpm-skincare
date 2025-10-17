@@ -231,15 +231,27 @@ a {
 }
 .reference-main .partners-section p {
   max-width: 650px;
-  margin: 20px;
+  margin: 30px;
 }
-.reference-main .intro-section {
-  margin: 20px;
+.reference-main .intro-section p {
+  margin: 30px;
 }
 @media (min-width: 768px) {
   .reference-main .intro-section {
     width: 650px;
   }
+}
+.reference-main .review-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px;
+}
+.reference-main .review-section .card {
+  max-width: 330px;
+  background-color: #f4dad0;
+  border: none;
+  margin: 10px;
 }
 
 .main-services {
