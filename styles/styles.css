@@ -135,17 +135,42 @@ header .hero-flex-container {
 }
 header .hero-flex-container .hero-text {
   position: absolute;
-  top: 15%;
+  top: 10%;
   width: 85%;
+}
+header .hero-flex-container .hero-text h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  header .hero-flex-container .hero-text h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  header .hero-flex-container .hero-text h1 {
+    font-size: 5rem;
+  }
 }
 header .hero-flex-container .hero-btn {
   position: absolute;
-  bottom: 20%;
+  bottom: 8%;
   padding: 10px 20px;
   background-color: #4d5a49;
   color: white;
   border: none;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  header .hero-flex-container .hero-btn {
+    bottom: 20%;
+    font-size: large;
+  }
+}
+@media (min-width: 1024px) {
+  header .hero-flex-container .hero-btn {
+    bottom: 30%;
+    font-size: larger;
+  }
 }
 header .hero-flex-container .hero-btn:hover {
   background-color: #6a7b64;

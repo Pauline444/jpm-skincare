@@ -161,18 +161,44 @@ header {
 
             .hero-text {
                 position: absolute;
-                top: 15%;
+                top: 10%;
                 width: 85%;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                @include tablet {
+                    h1 {
+                        font-size: 3.5rem;
+                    }
+                }
+
+                @include desktop {
+                    h1 {
+                        font-size: 5rem;
+                    }
+                }
             }
 
             .hero-btn {
                 position: absolute;
-                bottom: 20%;
+                bottom: 8%;
                 padding: 10px 20px;
                 background-color: $color-green-dark;
                 color: white;
                 border: none;
                 cursor: pointer;
+
+                @include tablet {
+                    bottom: 20%;
+                    font-size: large;
+                }
+
+                @include desktop {
+                    bottom: 30%;
+                    font-size: larger;
+                }
             }
 
             .hero-btn:hover {
