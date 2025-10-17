@@ -43,6 +43,10 @@ h1 {
         max-width: 800px;
         height: auto;
         display: block;
+
+            @include tablet {
+            width: 50%;
+        }
     }
 
     .contact-form, .aside-text {
@@ -52,11 +56,31 @@ h1 {
         align-items: center;
         width: 100%;
         padding: 2rem;
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+        .contact-form, .aside-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2rem;
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     .aside-form {
         width: 100%;
 
+        @include tablet {
+            width: 50%;
+        }
     }
 
     .label-text {

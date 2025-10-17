@@ -594,6 +594,11 @@ h1 {
   height: auto;
   display: block;
 }
+@media (min-width: 768px) {
+  .contact-section .contact-image {
+    width: 50%;
+  }
+}
 .contact-section .contact-form, .contact-section .aside-text {
   display: flex;
   flex-direction: column;
@@ -602,8 +607,31 @@ h1 {
   width: 100%;
   padding: 2rem;
 }
+@media (min-width: 768px) {
+  .contact-section .contact-form, .contact-section .aside-text {
+    flex-direction: row;
+  }
+}
+.contact-section .contact-form, .contact-section .aside-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .contact-section .contact-form, .contact-section .aside-text {
+    flex-direction: row;
+  }
+}
 .contact-section .aside-form {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .contact-section .aside-form {
+    width: 50%;
+  }
 }
 .contact-section .label-text {
   width: 100%;
