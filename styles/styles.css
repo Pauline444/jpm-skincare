@@ -31,7 +31,7 @@ header .header-top .logo-container .logo-img {
 header .header-top .logo-container .logo-text {
   margin: 0 0 0 5px;
   color: #865f47;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hedvig Letters Serif", serif;
 }
 header .header-bottom {
   padding: 10px 0;
@@ -340,11 +340,11 @@ a {
   }
 }
 h1, h2, h3 {
-  font-family: "Hedvig Letters Serif", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hedvig Letters Serif", serif;
 }
 
 .about-section {
@@ -552,11 +552,11 @@ p {
 }
 
 h1, h2, h3 {
-  font-family: "Hedvig Letters Serif", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hedvig Letters Serif", serif;
 }
 
 h1 {
@@ -572,6 +572,11 @@ h1 {
   align-items: center;
   text-align: center;
   padding: 1rem;
+}
+@media (min-width: 768px) {
+  .contact-adress, .contact-mail, .contact-phone {
+    flex-direction: row;
+  }
 }
 
 .contact-section {
@@ -589,6 +594,11 @@ h1 {
   height: auto;
   display: block;
 }
+@media (min-width: 768px) {
+  .contact-section .contact-image {
+    width: 50%;
+  }
+}
 .contact-section .contact-form, .contact-section .aside-text {
   display: flex;
   flex-direction: column;
@@ -597,8 +607,31 @@ h1 {
   width: 100%;
   padding: 2rem;
 }
+@media (min-width: 768px) {
+  .contact-section .contact-form, .contact-section .aside-text {
+    flex-direction: row;
+  }
+}
+.contact-section .contact-form, .contact-section .aside-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .contact-section .contact-form, .contact-section .aside-text {
+    flex-direction: row;
+  }
+}
 .contact-section .aside-form {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .contact-section .aside-form {
+    width: 50%;
+  }
 }
 .contact-section .label-text {
   width: 100%;
@@ -646,7 +679,7 @@ footer .footer-content .logo-container .logo-img {
 footer .footer-content .logo-container .logo-text {
   margin: 0 0 0 5px;
   color: #865f47;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hedvig Letters Serif", serif;
 }
 footer .footer-content .footer-info-text {
   max-width: 600px;
