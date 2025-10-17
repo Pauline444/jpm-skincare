@@ -546,6 +546,10 @@ p {
   padding: 3rem;
 }
 
+.contact-section {
+  background-color: aqua;
+}
+
 footer {
   background-color: #e4d4c3;
   padding: 20px;
