@@ -381,6 +381,8 @@ p {
   justify-content: center;
   align-items: center;
   background-color: #f4ede5;
+  overflow: hidden;
+  width: 100%;
 }
 .main-container .main-about-us .main-about-us-text {
   display: flex;
@@ -401,10 +403,11 @@ p {
 }
 .main-container .main-about-us-img img {
   margin-top: 30px;
-  max-width: 500px;
+  max-width: 100%;
   height: auto;
   display: block;
-  margin: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 1024px) {
   .main-container .main-about-us {
@@ -419,21 +422,31 @@ p {
 }
 .main-container .main-services-cards {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+}
+.main-container .main-services-cards .main-service-card {
+  position: relative;
+  display: inline-block;
 }
 .main-container .main-services-cards .main-service-card img {
-  max-width: 400px;
-  height: auto;
+  max-height: 500px;
+  width: 100%;
   display: block;
-  padding: 10px;
-  margin-top: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main-container .main-services-cards .main-service-card .btn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 10px 20px;
   margin: 30 auto;
-  background-color: #865f47;
+  background-color: #4d5a49;
   color: white;
   border: none;
   cursor: pointer;
