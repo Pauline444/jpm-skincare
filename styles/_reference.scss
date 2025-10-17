@@ -2,8 +2,31 @@
 @use "mixins" as *;
 
 .reference-main {
+  width: 100vw;
+  max-width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  overflow: hidden;
+
+  .partners-section {
+    background-color: $color-beige-light;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      max-width: 650px;
+      margin: 20px;
+    }
+  }
+
+  .intro-section {
+    margin: 20px;
+
+    @include tablet {
+      width: 650px;
+    }
+  }
 }

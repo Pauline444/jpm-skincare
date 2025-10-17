@@ -213,10 +213,33 @@ a {
   }
 }
 .reference-main {
+  width: 100vw;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  overflow: hidden;
+}
+.reference-main .partners-section {
+  background-color: #f4ede5;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reference-main .partners-section p {
+  max-width: 650px;
+  margin: 20px;
+}
+.reference-main .intro-section {
+  margin: 20px;
+}
+@media (min-width: 768px) {
+  .reference-main .intro-section {
+    width: 650px;
+  }
 }
 
 .main-services {
@@ -531,11 +554,10 @@ p {
 
 .main-products-container {
   background-color: #f4ede5;
-  padding: 2cap;
 }
 
 .main-product-logo img {
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .carousel-control-prev-icon,
