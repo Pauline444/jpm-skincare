@@ -139,16 +139,11 @@ header .hero-flex-container .hero-text {
   width: 85%;
 }
 header .hero-flex-container .hero-text h1 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 1rem + 5vw, 4rem);
 }
 @media (min-width: 768px) {
   header .hero-flex-container .hero-text h1 {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 1024px) {
-  header .hero-flex-container .hero-text h1 {
-    font-size: 5rem;
+    font-size: clamp(2rem, 1rem + 5vw, 5rem);
   }
 }
 header .hero-flex-container .hero-btn {
@@ -164,12 +159,14 @@ header .hero-flex-container .hero-btn {
   header .hero-flex-container .hero-btn {
     bottom: 20%;
     font-size: large;
+    padding: 15px 30px;
   }
 }
 @media (min-width: 1024px) {
   header .hero-flex-container .hero-btn {
     bottom: 30%;
     font-size: larger;
+    padding: 20px 40px;
   }
 }
 header .hero-flex-container .hero-btn:hover {
@@ -514,6 +511,14 @@ p {
   .main-container .main-services-cards {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .main-container h2 {
+    font-size: 40px;
+  }
+  .main-container h3 {
+    font-size: 30px;
   }
 }
 
