@@ -20,8 +20,8 @@ $text-primary: $color-gray-dark;
 $card-background: $color-pink-light;
 
 // Font-familjer
-$font-primary: "Montserrat", sans-serif;
-$font-secondary: "Hedvig Letters Serif", serif;
+$font-primary: "Hedvig Letters Serif", serif;
+$font-secondary: "Montserrat", sans-serif;"
 
 $font-h2: 7rem;
 
@@ -31,6 +31,4 @@ $container-max-widths: (
     lg: 960px,
     xl: 1140px,
     xxl: 1320px
-);
-$font-primary: "Montserrat", sans-serif;
-$font-secondary: "Hedvig Letters Serif", serif;
+)
