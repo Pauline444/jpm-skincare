@@ -165,18 +165,12 @@ header {
                 width: 85%;
 
                 h1 {
-                    font-size: 2rem;
+                    font-size: clamp(1rem, calc(1rem + 5vw), 4rem);
                 }
 
                 @include tablet {
                     h1 {
-                        font-size: 3.5rem;
-                    }
-                }
-
-                @include desktop {
-                    h1 {
-                        font-size: 5rem;
+                        font-size: clamp(2rem, calc(1rem + 5vw), 5rem);
                     }
                 }
             }
@@ -193,11 +187,13 @@ header {
                 @include tablet {
                     bottom: 20%;
                     font-size: large;
+                    padding: 15px 30px;
                 }
 
                 @include desktop {
                     bottom: 30%;
                     font-size: larger;
+                    padding: 20px 40px;
                 }
             }
 
