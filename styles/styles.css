@@ -342,14 +342,6 @@ a {
     align-self: flex-start;
   }
 }
-h1, h2, h3 {
-  font-family: "Hedvig Letters Serif", serif;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-}
-
 .about-section {
   background-color: #ffffff;
   display: flex;
