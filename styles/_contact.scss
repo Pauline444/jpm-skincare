@@ -1,14 +1,6 @@
 @use "mixins" as *;
 @use "variables" as *;
 
-h1, h2, h3 {
-    font-family: $font-primary;
-}
-
-p {
-    font-family: $font-secondary;
-}
-
 h1 {
     text-align: center;
     padding-top: 1rem;
@@ -22,6 +14,10 @@ h1 {
     align-items: center;
     text-align: center;
     padding: 1rem;
+
+    @include tablet {
+        flex-direction: row;
+    }
 
 }
 
@@ -39,6 +35,10 @@ h1 {
         max-width: 800px;
         height: auto;
         display: block;
+
+            @include tablet {
+            width: 50%;
+        }
     }
 
     .contact-form, .aside-text {
@@ -48,11 +48,31 @@ h1 {
         align-items: center;
         width: 100%;
         padding: 2rem;
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+        .contact-form, .aside-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2rem;
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     .aside-form {
         width: 100%;
 
+        @include tablet {
+            width: 50%;
+        }
     }
 
     .label-text {
