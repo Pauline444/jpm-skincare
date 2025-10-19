@@ -1,2 +1,48 @@
 @use "variables" as *;
 @use "mixins" as *;
+
+.reference-main {
+  width: 100vw;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  .partners-section {
+    background-color: $color-beige-light;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      max-width: 650px;
+      margin: 30px;
+    }
+  }
+
+  .intro-section {
+    p {
+      margin: 30px;
+    }
+
+    @include tablet {
+      width: 650px;
+    }
+  }
+
+  .review-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+
+    .card {
+      max-width: 330px;
+      background-color: $color-pink-light;
+      border: none;
+      margin: 10px;
+    }
+  }
+}
