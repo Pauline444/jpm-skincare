@@ -128,23 +128,36 @@ body, p, li, span, a, button {
 }
 
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-}
+.carousel-item {
+  background-color: #ffc0cb; /* rosa kvadrat */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* justera storlek på kvadraten */
+  padding: 2rem;
 
-.main-carousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .review-card {
+    background-color: #ffffff; /* vit kort */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    max-width: 500px;
     text-align: center;
-    padding: 3rem 0rem 3rem;
 
-    .main-carousel-text {
-        width: 100%;
-        max-width: 500px;
-        padding: 3rem;
+    .review-stars {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
     }
+
+    .review-text {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .review-author {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #333;
+    }
+  }
 }
