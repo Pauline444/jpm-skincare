@@ -1,14 +1,6 @@
 @use "mixins" as *;
 @use "variables" as *;
 
-h1, h2, h3 {
-  font-family: $font-primary!important;
-}
-
-p {
-    font-family: $font-secondary!important;
-}
-
 .about-section {
     background-color: $color-white;
     display: flex;
