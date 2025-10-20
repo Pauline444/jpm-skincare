@@ -63,51 +63,58 @@
   </header>
   <main>
     <h1>Kontaktinformation</h1>
-    <section id="contact-section" aria-label="Kontaktinformation">
-      <div class="contact-adress">
-        <!-- Platsikon (SVG) -->
-        <div class="ikon" aria-hidden="true">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z" stroke="currentColor"
-              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5" />
-          </svg>
-        </div>
-        <h2>Address</h2>
-        <p>
-          Hudvårdsgatan 666<br>
-          116 66 Stockholm
-        </p>
-      </div>
-      <div class="contact-mail">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true">
-          <path d="M3 5h18v14H3z" stroke="black" stroke-width="1.5" fill="none" />
-          <path d="M3 5l9 7 9-7" stroke="black" stroke-width="1.5" fill="none" />
-        </svg>
-        <h2>Epost</h2>
-        <p>kontakt@jpmhudvård.se</p>
 
-      </div>
-      <div class="contact-phone">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true">
-          <path
-            d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011.1-.2 11.4 11.4 0 003.6 1.1 1 1 0 011 .99v3.1a1 1 0 01-1 1A16.5 16.5 0 013 7.5a1 1 0 011-1h3.1a1 1 0 011 .99 11.4 11.4 0 001.1 3.6 1 1 0 01-.2 1.1l-2.4 2.6z"
-            stroke="black" stroke-width="1.5" fill="none" />
-        </svg>
-        <h2>Telefon</h2>
-        <p>+46 8 123 456 78</p>
+    <section id="contact-section" aria-label="Kontaktinformation">
+      <div class="contacts-container">
+
+        <div class="contact">
+          <div class="ikon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7z" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </div>
+          <div class="adress">
+            <h2>Address</h2>
+            <p>Hudvårdsgatan 666<br>116 66 Stockholm</p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="ikon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 5h18v14H3z" stroke="black" stroke-width="1.5" fill="none" />
+              <path d="M3 5l9 7 9-7" stroke="black" stroke-width="1.5" fill="none" />
+            </svg>
+          </div>
+          <div class="adress">
+            <h2>Epost</h2>
+            <p>kontakt@jpmhudvård.se</p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="ikon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011.1-.2 11.4 11.4 0 003.6 1.1 1 1 0 011 .99v3.1a1 1 0 01-1 1A16.5 16.5 0 013 7.5a1 1 0 011-1h3.1a1 1 0 011 .99 11.4 11.4 0 001.1 3.6 1 1 0 01-.2 1.1l-2.4 2.6z"
+                stroke="black" stroke-width="1.5" fill="none" />
+            </svg>
+          </div>
+          <div class="adress">
+            <h2>Telefon</h2>
+            <p>+46 8 123 456 78</p>
+          </div>
+        </div>
+
       </div>
     </section>
-
-    <section class="contact-section" id="form" aria-label="Kontaktformulär">
+    <section class="contact-section2" id="form" aria-label="Kontaktformulär">
       <div class="contact-form">
         <img class="contact-image" src="/images/img-entrance-web.jpg" alt="Byggnad">
-        <aside class="aside-text">
-          <h3>Skicka ett meddelande</h3>
-        </aside>
         <aside class="aside-form">
+          <h3>Skicka ett meddelande</h3><br>
           <form action="/action_page.php" method="get">
             <label for="name">Namn</label><br>
             <input class="label-text" type="text" id="name" name="name" placeholder="Ange namn"><br>
@@ -115,12 +122,12 @@
             <input class="label-text" type="email" id="email" name="email" placeholder="Ange epost"><br>
             <label for="subject">Välj ämne</label><br>
             <select class="label-text" name="subject" id="subject">
-              <option value="facial-treatments">Ansiktsbehandlingar</option>
-              <option value="lashes-brows">Fransar och bryn</option>
-              <option value="chemical-peel">Kemisk peeling</option>
-              <option value="massage">Massage</option>
-              <option value="questions">Frågor om företaget</option>
-              <option value="feedback">Synpunkter på webbplats</option>
+                <option value="facial-treatments">Ansiktsbehandlingar</option>
+                <option value="lashes-brows">Fransar och bryn</option>
+                <option value="chemical-peel">Kemisk peeling</option>
+                <option value="massage">Massage</option>
+                <option value="questions">Frågor om företaget</option>
+                <option value="feedback">Synpunkter på webbplats</option>
             </select><br>
             <label for="message">Meddelande</label><br>
             <textarea class="label-text" id="message" name="message" placeholder="Skriv ett meddelande"></textarea><br>
@@ -129,7 +136,6 @@
         </aside>
       </div>
     </section>
-
   </main>
   <footer>
     <div class="footer-content text-center">
