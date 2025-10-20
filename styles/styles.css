@@ -559,10 +559,30 @@ a {
 
 .main-products-container {
   background-color: #f4ede5;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.main-products-container .main-product-logo img {
+  max-width: 250px;
 }
 
-.main-product-logo img {
-  max-width: 250px;
+.carousel.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.carousel.slide .review-card {
+  background-color: #f4dad0;
+  padding: 2rem;
+  margin: 2rem;
+}
+.carousel.slide .carousel-control-prev-icon,
+.carousel.slide .carousel-control-next-icon {
+  background-color: #f4dad0;
+  border-radius: 50%;
+  padding: 10px;
+  background-size: 100%, 100%;
 }
 
 h1 {
