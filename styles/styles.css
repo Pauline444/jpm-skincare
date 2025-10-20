@@ -342,6 +342,15 @@ a {
   align-self: center;
 }
 
+.book-price {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+.book-price .price {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .main-treat-card {
     max-width: 1000px;
