@@ -111,36 +111,36 @@
 
 .main-products-container {
     background-color: $color-beige-light;
-    padding: 2cap;
-
-}
-
-.main-product-logo {
+    padding: 1rem;
+    margin-top: 2rem;
 
 
-    img {
-        max-width: 200px;
+    .main-product-logo {
+        img {
+            max-width: 250px;
+        }
     }
+
 }
 
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-}
-
-.main-carousel {
+.carousel.slide {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 3rem 0rem 3rem;
 
-    .main-carousel-text {
-        width: 100%;
-        max-width: 500px;
-        padding: 3rem;
+    .review-card {
+        background-color: $color-pink-light;
+        padding: 2rem;
+        margin: 2rem;
     }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: $color-pink-light;
+        border-radius: 50%;
+        padding: 10px;
+        background-size: 100%, 100%;
+}
+
 }

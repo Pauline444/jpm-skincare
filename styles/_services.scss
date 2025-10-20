@@ -7,6 +7,7 @@
   align-items: center;
   text-align: center;
   padding: 1.5rem;
+  padding-bottom: 0;
   overflow-x: hidden;
 }
 
@@ -88,6 +89,16 @@
   padding: 0.5rem 1rem;
   font-size: 1rem;
   align-self: center;
+}
+
+.book-price {
+  text-align: left;
+  margin-top: 0.5rem;
+
+  .price {
+    margin-left: 1rem;
+    font-weight: 600;
+  }
 }
 
 @include tablet {

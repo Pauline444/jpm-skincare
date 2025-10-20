@@ -32,6 +32,7 @@ header .header-top .logo-container .logo-text {
   margin: 0 0 0 5px;
   color: #865f47;
   font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 header .header-bottom {
   padding: 10px 0;
@@ -212,12 +213,55 @@ a {
     background-color: #f4ede5;
   }
 }
+.reference-main {
+  width: 100vw;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.reference-main .partners-section {
+  background-color: #f4ede5;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reference-main .partners-section p {
+  max-width: 650px;
+  margin: 30px;
+}
+.reference-main .intro-section p {
+  margin: 30px;
+}
+@media (min-width: 768px) {
+  .reference-main .intro-section {
+    width: 650px;
+  }
+}
+.reference-main .review-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px;
+}
+.reference-main .review-section .card {
+  max-width: 330px;
+  background-color: #f4dad0;
+  border: none;
+  margin: 10px;
+}
+
 .main-services {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 1.5rem;
+  padding-bottom: 0;
   overflow-x: hidden;
 }
 
@@ -297,6 +341,15 @@ a {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   align-self: center;
+}
+
+.book-price {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+.book-price .price {
+  margin-left: 1rem;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
@@ -524,26 +577,18 @@ p {
 
 .main-products-container {
   background-color: #f4ede5;
-  padding: 2cap;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.main-products-container .main-product-logo img {
+  max-width: 250px;
 }
 
-.main-product-logo img {
-  max-width: 200px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-}
-
-.main-carousel {
+.carousel.slide {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 3rem 0rem 3rem;
 }
 .main-carousel .main-carousel-text {
   width: 100%;
@@ -558,6 +603,17 @@ h1 {
 
 h3 {
   padding: 2rem 0rem 2rem;
+.carousel.slide .review-card {
+  background-color: #f4dad0;
+  padding: 2rem;
+  margin: 2rem;
+}
+.carousel.slide .carousel-control-prev-icon,
+.carousel.slide .carousel-control-next-icon {
+  background-color: #f4dad0;
+  border-radius: 50%;
+  padding: 10px;
+  background-size: 100%, 100%;
 }
 
 .contacts-container {
@@ -655,7 +711,7 @@ h3 {
 
 footer {
   background-color: #e4d4c3;
-  padding: 20px;
+  padding: 10px;
 }
 footer .footer-content {
   display: flex;
@@ -681,8 +737,13 @@ footer .footer-content .logo-container .logo-text {
 }
 footer .footer-content .footer-info-text {
   max-width: 600px;
+  font-family: Montserrat, sans-serif;
 }
 footer .fab,
 footer .fa-solid {
   color: black;
+}
+footer .footer-info-text {
+  max-width: 600px;
+  min-width: 250px;
 }/*# sourceMappingURL=styles.css.map */

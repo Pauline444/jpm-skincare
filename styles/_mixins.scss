@@ -1,8 +1,4 @@
-@use "variables" as var;
-
-
-
-@mixin desktop {
+@mixin desktop { 
     @media (min-width: 1024px) {
         @content;
     }
