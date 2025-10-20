@@ -2,16 +2,21 @@
 @use "mixins" as *;
 
 .reference-main {
-  width: 100vw;
   max-width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
 
+  .intro-section {
+    p {
+      max-width: 650px;
+      margin: 30px;
+    }
+  }
+
   .partners-section {
     background-color: $color-beige-light;
-    max-width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,29 +25,32 @@
       max-width: 650px;
       margin: 30px;
     }
-  }
 
-  .intro-section {
-    p {
-      margin: 30px;
-    }
-
-    @include tablet {
-      width: 650px;
+    .main-products-logos {
+      .main-product-logo img {
+        max-width: 250px;
+      }
     }
   }
 
   .review-section {
+    p {
+      max-width: 650px;
+      margin: 30px;
+    }
+  }
+
+  .card-review-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 30px;
 
-    .card {
+    .card-review {
       max-width: 330px;
       background-color: $color-pink-light;
       border: none;
       margin: 10px;
+      margin-bottom: 40px;
     }
   }
 }
