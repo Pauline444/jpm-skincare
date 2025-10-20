@@ -111,11 +111,36 @@
 
 .main-products-container {
     background-color: $color-beige-light;
-}
+    padding: 1rem;
+    margin-top: 2rem;
 
-.main-product-logo {
-    img {
-        max-width: 250px;
+
+    .main-product-logo {
+        img {
+            max-width: 250px;
+        }
     }
+
 }
 
+.carousel.slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .review-card {
+        background-color: $color-pink-light;
+        padding: 2rem;
+        margin: 2rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: $color-pink-light;
+        border-radius: 50%;
+        padding: 10px;
+        background-size: 100%, 100%;
+}
+
+}
