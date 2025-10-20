@@ -31,7 +31,7 @@ header .header-top .logo-container .logo-img {
 header .header-top .logo-container .logo-text {
   margin: 0 0 0 5px;
   color: #865f47;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hedvig Letters Serif", serif;
 }
 header .header-bottom {
   padding: 10px 0;
@@ -212,12 +212,55 @@ a {
     background-color: #f4ede5;
   }
 }
+.reference-main {
+  width: 100vw;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.reference-main .partners-section {
+  background-color: #f4ede5;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reference-main .partners-section p {
+  max-width: 650px;
+  margin: 30px;
+}
+.reference-main .intro-section p {
+  margin: 30px;
+}
+@media (min-width: 768px) {
+  .reference-main .intro-section {
+    width: 650px;
+  }
+}
+.reference-main .review-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px;
+}
+.reference-main .review-section .card {
+  max-width: 330px;
+  background-color: #f4dad0;
+  border: none;
+  margin: 10px;
+}
+
 .main-services {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 1.5rem;
+  padding-bottom: 0;
   overflow-x: hidden;
 }
 
@@ -299,6 +342,15 @@ a {
   align-self: center;
 }
 
+.book-price {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+.book-price .price {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .main-treat-card {
     max-width: 1000px;
@@ -344,7 +396,7 @@ h1, h2, h3 {
 }
 
 p {
-  font-family: Hedvig Letters Serif, serif;
+  font-family: "Hedvig Letters Serif", serif;
 }
 
 .about-section {
@@ -524,31 +576,36 @@ p {
 
 .main-products-container {
   background-color: #f4ede5;
-  padding: 2cap;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.main-products-container .main-product-logo img {
+  max-width: 250px;
 }
 
-.main-product-logo img {
-  max-width: 200px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-}
-
-.main-carousel {
+.carousel.slide {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 3rem 0rem 3rem;
+}
+.carousel.slide .review-card {
+  background-color: #f4dad0;
+  padding: 2rem;
+  margin: 2rem;
 }
 .main-carousel .main-carousel-text {
   width: 100%;
   max-width: 500px;
   padding: 3rem;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Hedvig Letters Serif", serif;
 }
 
 h1 {
@@ -655,7 +712,7 @@ h3 {
 
 footer {
   background-color: #e4d4c3;
-  padding: 20px;
+  padding: 10px;
 }
 footer .footer-content {
   display: flex;
@@ -677,7 +734,7 @@ footer .footer-content .logo-container .logo-img {
 footer .footer-content .logo-container .logo-text {
   margin: 0 0 0 5px;
   color: #865f47;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hedvig Letters Serif", serif;
 }
 footer .footer-content .footer-info-text {
   max-width: 600px;
@@ -685,4 +742,8 @@ footer .footer-content .footer-info-text {
 footer .fab,
 footer .fa-solid {
   color: black;
+}
+footer .footer-info-text {
+  max-width: 600px;
+  min-width: 250px;
 }/*# sourceMappingURL=styles.css.map */
