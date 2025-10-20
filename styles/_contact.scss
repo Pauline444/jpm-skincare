@@ -1,104 +1,133 @@
 @use "mixins" as *;
 @use "variables" as *;
 
+
 h1 {
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
-.contact-adress, .contact-mail, .contact-phone  {
-    background-color: $color-white;
+h3 {
+    padding-top: 2rem;
+}
+
+.contacts-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
+    gap: 2rem;
+}
+
+.contact {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 1rem;
+
+    .ikon {
+        margin-bottom: 1rem;
+
+        svg {
+        width: 48px;
+        height: 48px;
+        }
+    }
+}
 
     @include tablet {
+    .contacts-container {
         flex-direction: row;
+        justify-content: space-between;
     }
 
+    .contact {
+        flex: 1;
+    }
 }
 
-.contact-section {
-    background-color: $color-beige-light;
+.contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    width: 100%;
     padding: 2rem;
-
-    .contact-image {
-        width: 100%;
-        max-width: 800px;
-        height: auto;
-        display: block;
-
-            @include tablet {
-            width: 50%;
-        }
+    
+    @include tablet {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
     }
+}
 
-    .contact-form, .aside-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 2rem;
+.contact-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
 
-        @include tablet {
-            flex-direction: row;
-        }
+    @include tablet {
+        width: 50%;
     }
+}
 
-        .contact-form, .aside-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 2rem;
+.form {
+    width: 100%;
 
-        @include tablet {
-            flex-direction: row;
-        }
+    @include tablet {
+        width: 50%;
     }
+}
 
-    .aside-form {
+.aside-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @include tablet {
         width: 100%;
-
-        @include tablet {
-            width: 50%;
-        }
+        text-align: left;
+        margin-bottom: 0;
     }
+}
 
-    .label-text {
+.aside-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    select {
         width: 100%;
-        max-width: 800px;
         padding: 1rem;
         font-size: 1rem;
+        background-color: $color-beige-light;
+        border: none;
         margin-bottom: 1rem;
     }
 
-
-    .contact-button {
-        background-color: $color-green-dark;
-        color: $color-white;
+    textarea {
         width: 100%;
-        max-width: 800px;
-        margin: 1rem auto;
+        height: 400px;
+        padding: 1rem;
+        font-size: 1rem;
+        background-color: $color-beige-light;
         border: none;
-        padding: 0.8rem 1.5rem;
-        font-size: 1.1rem;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $color-green;
-        }
-
+        margin-bottom: 1rem;
     }
+}
 
+
+.contact-button {
+    background-color: $color-green-dark;
+    color: $color-white;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    &:hover {
+    background-color: $color-green;
+    }
 }
