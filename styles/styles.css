@@ -556,6 +556,10 @@ h1 {
   padding-top: 2rem;
 }
 
+h3 {
+  padding: 2rem 0rem 2rem;
+}
+
 .contacts-container {
   display: flex;
   flex-direction: column;
@@ -589,17 +593,18 @@ h1 {
 }
 .contact-image {
   width: 100%;
-  max-width: 800px;
   height: auto;
   display: block;
 }
 @media (min-width: 768px) {
   .contact-image {
     width: 50%;
+    max-width: 550x;
+    padding: 1rem;
   }
 }
 
-.contact-form, .aside-text {
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -608,17 +613,19 @@ h1 {
   padding: 2rem;
 }
 @media (min-width: 768px) {
-  .contact-form, .aside-text {
+  .contact-form {
     flex-direction: row;
   }
 }
 
 .aside-form {
   width: 100%;
+  max-width: 600px;
 }
 @media (min-width: 768px) {
   .aside-form {
     width: 50%;
+    padding: 1rem;
   }
 }
 
@@ -628,6 +635,8 @@ h1 {
   padding: 1rem;
   font-size: 1rem;
   margin-bottom: 1rem;
+  background-color: #f4ede5;
+  border: none;
 }
 
 .contact-button {

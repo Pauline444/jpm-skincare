@@ -6,6 +6,8 @@ h1 {
     padding-top: 2rem;
 }
 
+h3 {
+    padding-top: 2rem;
 
 .contacts-container {
     display: flex;
@@ -47,17 +49,18 @@ h1 {
 
     .contact-image {
         width: 100%;
-        max-width: 800px;
         height: auto;
         display: block;
 
             @include tablet {
             width: 50%;
+            max-width: 550x;
+            padding: 1rem;
         }
     }
 
 
-    .contact-form, .aside-text {
+    .contact-form {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -73,9 +76,11 @@ h1 {
 
     .aside-form {
         width: 100%;
+        max-width: 600px;
 
         @include tablet {
             width: 50%;
+            padding: 1rem;
         }
     }
 
@@ -85,6 +90,8 @@ h1 {
         padding: 1rem;
         font-size: 1rem;
         margin-bottom: 1rem;
+        background-color: $color-beige-light;
+        border: none;
     }
 
 
