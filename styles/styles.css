@@ -391,6 +391,14 @@ a {
     align-self: flex-start;
   }
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Hedvig Letters Serif", serif;
+}
+
+p, button, textarea {
+  font-family: Montserrat, sans-serif;
+}
+
 .about-section {
   background-color: #ffffff;
   display: flex;
@@ -464,11 +472,11 @@ a {
   height: 400px;
   max-width: 300px;
   margin: 2rem 0rem 1rem;
-  border: 15px solid #f4dad0;
+  border: 12px solid #f4dad0;
 }
 .staff-section .bio {
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 300px;
   margin-bottom: 2rem;
 }
 

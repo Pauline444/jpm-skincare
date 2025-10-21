@@ -1,6 +1,15 @@
 @use "mixins" as *;
 @use "variables" as *;
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-primary;
+}
+
+p, button, textarea {
+    font-family: $font-secondary;
+}
+
+
 .about-section {
     background-color: $color-white;
     display: flex;
@@ -74,12 +83,12 @@
         height: 400px;
         max-width: 300px;
         margin: 2rem 0rem 1rem;
-        border: 15px solid $color-pink-light;
+        border: 12px solid $color-pink-light;
         }
 
     .bio {
         margin: 0 auto;
-        max-width: 350px;
+        max-width: 300px;
         margin-bottom: 2rem;
         }
 
