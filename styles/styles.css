@@ -639,17 +639,15 @@ p, li, button, input, textarea {
 
 h1 {
   text-align: center;
-  padding-top: 2rem;
-}
-
-h3 {
-  padding-top: 2rem;
+  padding: 1.5rem;
+  margin: 4rem 0 1rem;
 }
 
 .contacts-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin: 2rem;
 }
 
 .contact {
@@ -689,6 +687,7 @@ h3 {
     flex-direction: row;
     align-items: flex-start;
     gap: 2rem;
+    padding: 0rem 10rem 0rem;
   }
 }
 
@@ -730,6 +729,7 @@ h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 .aside-form input,
 .aside-form select {
@@ -742,7 +742,7 @@ h3 {
 }
 .aside-form textarea {
   width: 100%;
-  height: 400px;
+  height: 260px;
   padding: 1rem;
   font-size: 1rem;
   background-color: #f4ede5;
