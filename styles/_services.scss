@@ -96,8 +96,30 @@
   margin-top: 0.5rem;
 
   .price {
-    margin-left: 1rem;
     font-weight: 600;
+  }
+}
+
+.treat-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .book-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .book-btn {
+    margin-bottom: 0.5rem;
+  }
+
+  .price {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
   }
 }
 
@@ -145,6 +167,25 @@
         .book-btn {
           align-self: flex-start;
         }
+      }
+    }
+  }
+  .treat-text {
+    align-items: flex-start;
+
+    .book-price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+
+      .book-btn {
+        margin: 0;
+      }
+
+      .price {
+        margin-left: 1rem;
       }
     }
   }
