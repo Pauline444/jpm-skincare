@@ -646,8 +646,8 @@ h1 {
 .contacts-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   margin: 2rem;
+  gap: 1rem;
 }
 
 .contact {
@@ -674,6 +674,19 @@ h1 {
     flex: 1;
   }
 }
+.contact-text {
+  background-color: #f4ede5;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.contact-text p {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -687,7 +700,7 @@ h1 {
     flex-direction: row;
     align-items: flex-start;
     gap: 2rem;
-    padding: 0rem 10rem 0rem;
+    padding: 3rem 10rem 0rem;
   }
 }
 
@@ -696,6 +709,7 @@ h1 {
   max-width: 800px;
   height: auto;
   display: block;
+  padding-bottom: 2rem;
 }
 @media (min-width: 768px) {
   .contact-image {
