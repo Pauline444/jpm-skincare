@@ -241,6 +241,18 @@ a {
   max-width: 650px;
   margin: 30px;
 }
+.reference-main .card-review-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.reference-main .card-review-section .card-review {
+  max-width: 330px;
+  background-color: #f4dad0;
+  border: none;
+  margin: 10px;
+  margin-bottom: 40px;
+}
 .reference-main .main-products-container {
   background-color: #f4ede5;
   padding: 1rem;
