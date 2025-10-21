@@ -2,11 +2,10 @@
 @use "mixins" as *;
 
 .reference-main {
-  max-width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
 
   .intro-section {
     p {
@@ -23,8 +22,13 @@
 
   .main-products-container {
     background-color: $color-beige-light;
+    max-width: 100%;
     padding: 1rem;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     & p {
       max-width: 350px;

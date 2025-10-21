@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1500px;
+}
+
 header {
     background-color: $color-beige-dark;
 
