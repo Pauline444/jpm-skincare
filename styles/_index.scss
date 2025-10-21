@@ -182,3 +182,23 @@ p, li, button, input, textarea {
     }
 
 }
+
+
+.main-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-section {
+    max-width: 1000px;
+    text-align: left;
+    padding-top: 3rem;
+
+    .text-center-customer {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    }
+
