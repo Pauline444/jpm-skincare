@@ -221,30 +221,45 @@ a {
   overflow: hidden;
 }
 .reference-main .intro-section p {
-  max-width: 650px;
+  max-width: 350px;
   margin: 30px;
 }
-.reference-main .partners-section {
+@media (min-width: 768px) {
+  .reference-main .intro-section p {
+    max-width: 700px;
+  }
+}
+.reference-main .main-products-container {
   background-color: #f4ede5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
-.reference-main .partners-section p {
-  max-width: 650px;
+.reference-main .main-products-container p {
+  max-width: 350px;
   margin: 30px;
 }
-.reference-main .partners-section .main-products-logos .main-product-logo img {
+@media (min-width: 768px) {
+  .reference-main .main-products-container p {
+    max-width: 700px;
+  }
+}
+.reference-main .main-products-container .main-product-logo img {
   max-width: 250px;
 }
 .reference-main .review-section p {
-  max-width: 650px;
+  max-width: 350px;
   margin: 30px;
+}
+@media (min-width: 768px) {
+  .reference-main .review-section p {
+    max-width: 700px;
+  }
 }
 .reference-main .card-review-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 800px;
 }
 .reference-main .card-review-section .card-review {
   max-width: 330px;
@@ -253,13 +268,10 @@ a {
   margin: 10px;
   margin-bottom: 40px;
 }
-.reference-main .main-products-container {
-  background-color: #f4ede5;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-.reference-main .main-products-container .main-product-logo img {
-  max-width: 250px;
+@media (min-width: 768px) {
+  .reference-main .card-review-section {
+    max-width: 1200px;
+  }
 }
 
 .main-services {

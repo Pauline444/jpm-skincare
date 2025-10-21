@@ -10,24 +10,35 @@
 
   .intro-section {
     p {
-      max-width: 650px;
+      max-width: 350px;
       margin: 30px;
+    }
+
+    @include tablet {
+      p {
+        max-width: 700px;
+      }
     }
   }
 
-  .partners-section {
+  .main-products-container {
     background-color: $color-beige-light;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
 
-    p {
-      max-width: 650px;
+    & p {
+      max-width: 350px;
       margin: 30px;
     }
 
-    .main-products-logos {
-      .main-product-logo img {
+    @include tablet {
+      p {
+        max-width: 700px;
+      }
+    }
+
+    .main-product-logo {
+      img {
         max-width: 250px;
       }
     }
@@ -35,8 +46,14 @@
 
   .review-section {
     p {
-      max-width: 650px;
+      max-width: 350px;
       margin: 30px;
+    }
+
+    @include tablet {
+      p {
+        max-width: 700px;
+      }
     }
   }
 
@@ -44,6 +61,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 800px;
 
     .card-review {
       max-width: 330px;
@@ -52,19 +70,9 @@
       margin: 10px;
       margin-bottom: 40px;
     }
-  }
 
-
-  .main-products-container {
-    background-color: $color-beige-light;
-    padding: 1rem;
-    margin-top: 2rem;
-
-
-    .main-product-logo {
-      img {
-        max-width: 250px;
-      }
+    @include tablet {
+      max-width: 1200px;
     }
   }
 }
