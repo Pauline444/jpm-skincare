@@ -30,7 +30,7 @@ header .header-top .logo-container .logo-img {
 }
 header .header-top .logo-container .logo-text {
   margin: 0 0 0 5px;
-  color: #865f47;
+  color: #563a29;
   font-family: Montserrat, sans-serif;
 }
 header .header-bottom {
@@ -353,7 +353,7 @@ a {
 }
 
 .book-btn {
-  background-color: #865f47;
+  background-color: #563a29;
   color: #ffffff;
   border: none;
   margin-top: 1rem;
@@ -876,7 +876,7 @@ footer .footer-content .logo-container .logo-img {
 }
 footer .footer-content .logo-container .logo-text {
   margin: 0 0 0 5px;
-  color: #865f47;
+  color: #563a29;
   font-family: Montserrat, sans-serif;
 }
 footer .fab,
@@ -896,4 +896,4 @@ footer .footer-info-text {
   .nav-link {
     font-size: 14px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
