@@ -683,8 +683,8 @@ h1 {
 
 .contact-text p {
   width: 100%;
-  max-width: 800px;
-  text-align: center;
+  max-width: 1000px;
+  text-align: left;
 }
 
 .contact-form {
