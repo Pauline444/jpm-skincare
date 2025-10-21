@@ -40,17 +40,16 @@
     }
   }
 
-  .card-review-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .main-products-container {
+    background-color: $color-beige-light;
+    padding: 1rem;
+    margin-top: 2rem;
 
-    .card-review {
-      max-width: 330px;
-      background-color: $color-pink-light;
-      border: none;
-      margin: 10px;
-      margin-bottom: 40px;
+
+    .main-product-logo {
+      img {
+        max-width: 250px;
+      }
     }
   }
 }
