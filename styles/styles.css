@@ -241,17 +241,13 @@ a {
   max-width: 650px;
   margin: 30px;
 }
-.reference-main .card-review-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.reference-main .main-products-container {
+  background-color: #f4ede5;
+  padding: 1rem;
+  margin-top: 2rem;
 }
-.reference-main .card-review-section .card-review {
-  max-width: 330px;
-  background-color: #f4dad0;
-  border: none;
-  margin: 10px;
-  margin-bottom: 40px;
+.reference-main .main-products-container .main-product-logo img {
+  max-width: 250px;
 }
 
 .main-services {
@@ -533,11 +529,12 @@ a {
   display: inline-block;
 }
 .main-container .main-services-cards .main-service-card img {
-  max-height: 500px;
-  width: 100%;
+  max-width: 450px;
+  height: auto;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 10px;
 }
 .main-container .main-services-cards .main-service-card .btn {
   position: absolute;
@@ -550,6 +547,9 @@ a {
   color: white;
   border: none;
   cursor: pointer;
+}
+.main-container .main-services-cards .main-service-card .massage-img {
+  max-height: 350px;
 }
 @media (min-width: 768px) {
   .main-container .main-services-cards {
@@ -566,13 +566,39 @@ a {
   }
 }
 
-.main-products-container {
+.main-choice-container {
   background-color: #f4ede5;
   padding: 1rem;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.main-products-container .main-product-logo img {
-  max-width: 250px;
+.main-choice-container .main-choice-text {
+  max-width: 600px;
+}
+.main-choice-container .main-choice-text p {
+  padding: 10px;
+  margin: 0 20px;
+}
+.main-choice-container .main-choice-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-choice-container .main-choice-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .main-choice-container {
+    flex-direction: row;
+    padding: 30px;
+  }
 }
 
 .carousel.slide {
