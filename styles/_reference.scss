@@ -2,10 +2,7 @@
 @use "mixins" as *;
 
 .reference-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flexBox(column, center, center);
 
   .intro-section {
     p {
@@ -21,14 +18,11 @@
   }
 
   .main-products-container {
+    @include flexBox(column, center, center);
     background-color: $color-beige-light;
     max-width: 100%;
     padding: 1rem;
     margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     & p {
       max-width: 350px;
@@ -62,9 +56,7 @@
   }
 
   .card-review-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flexBox(wrap, space-around);
     max-width: 800px;
 
     .card-review {
