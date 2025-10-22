@@ -90,7 +90,7 @@ header {
         right: 0;
         width: 200px;
         height: 100%;
-        background-color: #f4ede5;
+        background-color: $color-beige-light;
         transition: right 0.3s ease;
         z-index: 1;
         padding-top: 60px;
@@ -103,7 +103,7 @@ header {
           display: inline-block;
           margin: 10px auto;
           text-decoration: none;
-          color: black;
+          color: $color-black;
         }
 
         .sidebar-link:hover {
@@ -178,7 +178,7 @@ header {
         bottom: 8%;
         padding: 10px 20px;
         background-color: $color-green-dark;
-        color: white;
+        color: $color-white;
         border: none;
         cursor: pointer;
 
@@ -230,18 +230,18 @@ a {
     .nav-menu-link {
       font-size: smaller;
       text-decoration: none;
-      color: black;
+      color: $color-black;
       padding: 11px;
       border-radius: 20px;
       cursor: pointer;
     }
 
     .nav-menu-link:hover {
-      background-color: #f4ede5;
+      background-color: $color-beige-light;
     }
 
     .active {
-      background-color: #f4ede5;
+      background-color: $color-beige-light;
     }
   }
 }

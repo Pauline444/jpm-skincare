@@ -2,63 +2,57 @@
 @use "variables" as *;
 
 footer {
-    background-color: $color-beige-dark;
-    padding: 10px;
+  background-color: $color-beige-dark;
+  padding: 10px;
 
-    & p {
-        font-size: 13px;
+  & p {
+    font-size: 13px;
+  }
+
+  @include tablet {
+    p {
+      font-size: 16px;
     }
+  }
 
-    @include tablet {
-        p {
-            font-size: 16px;
-        }
+  .footer-content {
+    @include flexBox(space-between, center);
+
+    .logo-container {
+      @include flexBox(nowrap, start, center);
+      max-width: 200px;
+      padding: 8px;
+
+      .logo-img {
+        max-width: 50px;
+        border-radius: 50%;
+      }
+
+      .logo-text {
+        margin: 0 0 0 5px;
+        color: $color-brown;
+        font-family: $font-secondary;
+      }
     }
+  }
 
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .fab,
+  .fa-solid {
+    color: $color-black;
+  }
 
-        .logo-container {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: start;
-            align-items: center;
-            max-width: 200px;
-            padding: 8px;
-
-            .logo-img {
-                max-width: 50px;
-                border-radius: 50%;
-            }
-
-            .logo-text {
-                margin: 0 0 0 5px;
-                color: $color-brown;
-                font-family: $font-secondary;
-            }
-        }
-    }
-
-    .fab,
-    .fa-solid {
-        color: black;
-    }
-
-    .footer-info-text {
-        max-width: 600px;
-        min-width: 250px;
-    }
+  .footer-info-text {
+    max-width: 600px;
+    min-width: 250px;
+  }
 }
 
-
 .nav-link {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 @include tablet {
-    .nav-link {
-        font-size: 14px;
-    }
+  .nav-link {
+    font-size: 14px;
+  }
 }
