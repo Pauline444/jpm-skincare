@@ -2,9 +2,7 @@
 @use "mixins" as *;
 
 .main-services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexBox(column, center, center);
   text-align: center;
   padding: 1.5rem;
   padding-bottom: 0;
@@ -13,10 +11,7 @@
 
 .treat-card,
 .main-treat-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flexBox(column, center, center);
   width: 100%;
   max-width: 600px;
   background: #fff;
@@ -35,12 +30,10 @@
 }
 
 .cards-section {
+  @include flexBox(column, center);
   background: $color-beige-light;
   box-sizing: border-box;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 2rem 1rem;
 
   .treat-card {
@@ -101,14 +94,11 @@
 }
 
 .treat-text {
+  @include flexBox(column);
   width: 100%;
-  display: flex;
-  flex-direction: column;
 
   .book-price {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexBox(column, center);
     margin-top: 0.5rem;
   }
 
@@ -143,8 +133,7 @@
 
   .cards-section {
     .treat-card-alt {
-      display: flex;
-      flex-direction: row;
+      @include flexBox(row);
       max-width: 1000px;
       padding: 1.5rem 2rem;
       gap: 2rem;
@@ -174,10 +163,7 @@
     align-items: flex-start;
 
     .book-price {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
+      @include flexBox(row, center, flex-start);
       width: 100%;
 
       .book-btn {
