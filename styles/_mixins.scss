@@ -10,7 +10,7 @@
   }
 }
 
-@mixin flexBox() {
+@mixin flexBox($justify, $align, $direction, $wraps) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
