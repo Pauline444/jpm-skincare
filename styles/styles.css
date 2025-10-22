@@ -241,13 +241,17 @@ a {
   max-width: 650px;
   margin: 30px;
 }
-.reference-main .main-products-container {
-  background-color: #f4ede5;
-  padding: 1rem;
-  margin-top: 2rem;
+.reference-main .card-review-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.reference-main .main-products-container .main-product-logo img {
-  max-width: 250px;
+.reference-main .card-review-section .card-review {
+  max-width: 330px;
+  background-color: #f4dad0;
+  border: none;
+  margin: 10px;
+  margin-bottom: 40px;
 }
 
 .main-services {
@@ -810,6 +814,14 @@ footer {
   background-color: #e4d4c3;
   padding: 10px;
 }
+footer p {
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  footer p {
+    font-size: 16px;
+  }
+}
 footer .footer-content {
   display: flex;
   justify-content: space-between;
@@ -839,4 +851,14 @@ footer .fa-solid {
 footer .footer-info-text {
   max-width: 600px;
   min-width: 250px;
+}
+
+.nav-link {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=styles.css.map */
