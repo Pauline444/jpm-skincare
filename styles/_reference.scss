@@ -2,47 +2,32 @@
 @use "mixins" as *;
 
 .reference-main {
+  max-width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  overflow: hidden;
 
   .intro-section {
     p {
-      max-width: 350px;
+      max-width: 650px;
       margin: 30px;
-    }
-
-    @include tablet {
-      p {
-        max-width: 700px;
-      }
     }
   }
 
-  .main-products-container {
+  .partners-section {
     background-color: $color-beige-light;
-    max-width: 100%;
-    padding: 1rem;
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
-    & p {
-      max-width: 350px;
+    p {
+      max-width: 650px;
       margin: 30px;
     }
 
-    @include tablet {
-      p {
-        max-width: 700px;
-      }
-    }
-
-    .main-product-logo {
-      img {
+    .main-products-logos {
+      .main-product-logo img {
         max-width: 250px;
       }
     }
@@ -50,14 +35,8 @@
 
   .review-section {
     p {
-      max-width: 350px;
+      max-width: 650px;
       margin: 30px;
-    }
-
-    @include tablet {
-      p {
-        max-width: 700px;
-      }
     }
   }
 
@@ -65,7 +44,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 800px;
 
     .card-review {
       max-width: 330px;
@@ -73,10 +51,6 @@
       border: none;
       margin: 10px;
       margin-bottom: 40px;
-    }
-
-    @include tablet {
-      max-width: 1200px;
     }
   }
 }
